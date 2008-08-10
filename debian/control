@@ -1,8 +1,8 @@
-Source: kdevelop4
+Source: kdevelop
 Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Fathi Boudra <fabo@debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs, debhelper (>= 7), quilt, cmake (>= 2.6),
  kdelibs5-dev (>= 4:4.1.0), kdevplatform-dev, libsublime-dev
 Standards-Version: 3.8.0
@@ -10,11 +10,14 @@ Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/kdevelop
 Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdevelop
 
-Package: kdevelop4
+Package: kdevelop
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: An IDE for Unix/X11
- KDevelop is an easy to use Integrated Development Environment
- for developing C/C++ applications under X11. It features
- project management, an advanced editor, a class browser
- and an integrated debugger.
+Description: An integrated development environment for KDE
+ KDevelop is an easy to use integrated development environment for KDE.
+ It supports a wide range of programming languages and features project
+ management, an advanced editor, a class browser and an integrated debugger.
+ .
+ The application wizard can generate fully functional projects
+ for terminal programs and GUI programs using Qt, KDE or GNOME.
+
