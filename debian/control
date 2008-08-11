@@ -12,7 +12,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdevelop
 
 Package: kdevelop
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kdevelop-data (>= ${source:Version})
 Description: An integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
@@ -21,3 +21,27 @@ Description: An integrated development environment for KDE
  The application wizard can generate fully functional projects
  for terminal programs and GUI programs using Qt, KDE or GNOME.
 
+Package: kdevelop-data
+Architecture: all
+Description: Data files for the KDevelop IDE
+ KDevelop is an easy to use integrated development environment for KDE.
+ It supports a wide range of programming languages and features project
+ management, an advanced editor, a class browser and an integrated debugger.
+ .
+ The application wizard can generate fully functional projects
+ for terminal programs and GUI programs using Qt, KDE or GNOME.
+ .
+ This package contains arch independent data for KDevelop.
+
+Package: kdevelop-dev
+Architecture: any
+Depends: kdevelop (= ${binary:Version}), kdelibs5-dev
+Description: Development files for the KDevelop IDE
+ KDevelop is an easy to use integrated development environment for KDE.
+ It supports a wide range of programming languages and features project
+ management, an advanced editor, a class browser and an integrated debugger.
+ .
+ The application wizard can generate fully functional projects
+ for terminal programs and GUI programs using Qt, KDE or GNOME.
+ .
+ This package contains development files for KDevelop.
