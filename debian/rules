@@ -1,3 +1,7 @@
 #!/usr/bin/make -f
 
 include debian/cdbs/kde.mk
+
+binary-install/kdevelop::
+	install -D -p -m0644 debian/kdevelop.xpm \
+		debian/kdevelop/usr/share/pixmaps/kdevelop.xpm
