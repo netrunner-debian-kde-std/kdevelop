@@ -9,10 +9,10 @@ usr/share/kde4/apps/kdevcustommakemanager/*
 usr/share/kde4/apps/kdevdocumentview/*
 usr/share/kde4/apps/kdevelop/*
 usr/share/kde4/apps/kdevgrepview/*
-usr/share/kde4/apps/kdevplatform/*
 usr/share/kde4/apps/kdevqmakebuilder/*
 usr/share/kde4/apps/kdevqtdesigner/*
 usr/share/kde4/apps/kdevqtest/*
 usr/share/kde4/apps/kdevvalgrind/*
+usr/share/kde4/apps/kdevcoverage/*
 usr/share/kde4/config/*
 usr/share/kde4/services/*
