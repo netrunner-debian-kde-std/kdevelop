@@ -1,14 +1,8 @@
-kdevelop (4.0~svn894460-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.84+svn901835-1) UNRELEASED; urgency=low
 
-  +++ Changes by Fathi Boudra:
+  * New upstream release. 
 
-  * Initial packaging for kdevelop4.
-
-  +++ Changes by Jeremy Lainé:
-
-  * Update package description.
-
- -- Xavier Vello <xavier.vello@gmail.com>  Mon, 01 Dec 2008 20:28:44 +0100
+ -- Xavier Vello <xavier.vello@gmail.com>  Mon, 22 Dec 2008 03:35:59 +0100
 
 kdevelop (4:3.5.2-1) unstable; urgency=low
 

@@ -1,4 +1,3 @@
-usr/share/applications/kde4/*
 usr/share/icons/*
 usr/share/kde4/apps/kdevappwizard/*
 usr/share/kde4/apps/kdevcmakebuilder/*
@@ -15,4 +14,3 @@ usr/share/kde4/apps/kdevqtest/*
 usr/share/kde4/apps/kdevvalgrind/*
 usr/share/kde4/apps/kdevcoverage/*
 usr/share/kde4/config/*
-usr/share/kde4/services/*
