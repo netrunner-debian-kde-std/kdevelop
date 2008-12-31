@@ -1,8 +1,8 @@
-kdevelop (4:3.9.84+svn901835-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.84+svn903477-1) UNRELEASED; urgency=low
 
-  * New upstream release. 
+  * New upstream snapshot.
 
- -- Xavier Vello <xavier.vello@gmail.com>  Mon, 22 Dec 2008 03:35:59 +0100
+ -- Fathi Boudra <fabo@debian.org>  Wed, 31 Dec 2008 11:30:26 +0100
 
 kdevelop (4:3.5.2-1) unstable; urgency=low
 
