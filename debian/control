@@ -2,8 +2,7 @@ Source: kdevelop
 Section: devel
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
- Xavier Vello <xavier.vello@gmail.com>
+Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs, debhelper (>= 7), quilt, cmake (>= 2.6),
  kdevplatform-dev
 Standards-Version: 3.8.0
