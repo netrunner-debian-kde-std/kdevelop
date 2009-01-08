@@ -1,6 +1,6 @@
-kdevelop (4:3.9.85+svn907192-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.85+svn907190-1) UNRELEASED; urgency=low
 
-  * New upstream snapshot.
+  * New svn snapshot.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 31 Dec 2008 11:30:26 +0100
 
