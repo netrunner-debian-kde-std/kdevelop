@@ -1,4 +1,4 @@
-kdevelop (4:4.0~svn843965-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.91-1) UNRELEASED; urgency=low
 
   +++ Changes by Fathi Boudra:
 
@@ -8,7 +8,7 @@ kdevelop (4:4.0~svn843965-1) UNRELEASED; urgency=low
 
   * Update package description.
 
- -- Jeremy Lainé <jeremy.laine@m4x.org>  Sun, 10 Aug 2008 19:52:28 +0200
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Mon, 23 Feb 2009 21:21:26 +0000
 
 kdevelop (4:3.5.2-1) unstable; urgency=low
 
