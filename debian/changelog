@@ -1,12 +1,8 @@
-kdevelop (4:3.9.85+svn907190-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.91-1) UNRELEASED; urgency=low
 
-  * New svn snapshot.
+  * Initial upload of kdevelop 4.
 
-  +++ Changes by Modestas Vainius:
-
-  * Point Debian Vcs URLs to pkg-kde/trunk (new location).
-
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 20 Feb 2009 00:19:18 +0200
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 24 Feb 2009 13:57:54 +0000
 
 kdevelop (4:3.5.2-1) unstable; urgency=low
 

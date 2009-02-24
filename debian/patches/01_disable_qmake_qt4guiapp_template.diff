@@ -1,8 +1,0 @@
---- a/plugins/languages/cpp/app_templates/CMakeLists.txt
-+++ b/plugins/languages/cpp/app_templates/CMakeLists.txt
-@@ -1,5 +1,4 @@
- set(apptemplate_DIRS
--    qmake_qt4guiapp
-     cmake_qt4core
-     cmake_qt4core_qtest
- )
