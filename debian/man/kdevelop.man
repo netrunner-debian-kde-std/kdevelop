@@ -1,4 +1,3 @@
-.lf 1 debian/man/kdevelop.man
 .TH KDEVELOP 1
 .SH NAME
 kdevelop \- Integrated Development Environment for KDE
