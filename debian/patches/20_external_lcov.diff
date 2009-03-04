@@ -1,0 +1,12 @@
+diff -urN kdevelop-3.9.91.orig/plugins/coverage/lcovjob.cpp kdevelop-3.9.91/plugins/coverage/lcovjob.cpp
+--- kdevelop-3.9.91.orig/plugins/coverage/lcovjob.cpp	2008-12-22 14:55:07.000000000 +0000
++++ kdevelop-3.9.91/plugins/coverage/lcovjob.cpp	2009-03-04 19:02:08.000000000 +0000
+@@ -101,7 +101,7 @@
+          << "--wcwd"
+          << m_root.pathOrUrl()
+          << m_root.pathOrUrl();
+-    m_lcov->setProgram("lcov_geninfo", args);
++    m_lcov->setProgram("geninfo", args);
+     m_lcov->setOutputChannelMode(KProcess::SeparateChannels);
+     m_lineMaker = new ProcessLineMaker(m_lcov);
+ 

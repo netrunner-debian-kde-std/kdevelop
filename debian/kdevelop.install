@@ -1,4 +1,4 @@
-usr/bin/*
+usr/bin/kdevelop
 usr/lib/kde4/*
 usr/lib/lib*.so.*
 usr/share/applications/kde4/*
