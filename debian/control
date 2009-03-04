@@ -12,7 +12,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevelop
 
 Package: kdevelop
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, kdevelop-data (>= ${source:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, kdevelop-data (>= ${source:Version}), lcov
 Description: An integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
