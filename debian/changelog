@@ -1,6 +1,6 @@
 kdevelop (4:3.9.91-1) UNRELEASED; urgency=low
 
-  * Initial upload of kdevelop 4.
+  * Initial upload of kdevelop 4 to experimental (Closes: #481832).
 
  -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 24 Feb 2009 13:57:54 +0000
 

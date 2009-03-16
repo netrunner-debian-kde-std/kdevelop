@@ -5,14 +5,14 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs, debhelper (>= 7), quilt, cmake (>= 2.6.2), pkg-kde-tools (>= 0.4),
  kdevplatform-dev
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevelop
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevelop
 
 Package: kdevelop
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, kdevelop-data (>= ${source:Version}), lcov
+Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}), lcov
 Description: An integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
@@ -23,6 +23,7 @@ Description: An integrated development environment for KDE
 
 Package: kdevelop-data
 Architecture: all
+Depends: ${misc:Depends}
 Description: Data files for the KDevelop IDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
@@ -35,7 +36,7 @@ Description: Data files for the KDevelop IDE
 
 Package: kdevelop-dev
 Architecture: any
-Depends: kdevelop (= ${binary:Version}), kdelibs5-dev, kdevplatform-dev
+Depends: ${misc:Depends}, kdevelop (= ${binary:Version}), kdelibs5-dev, kdevplatform-dev
 Description: Development files for the KDevelop IDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
