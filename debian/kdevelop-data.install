@@ -2,7 +2,6 @@ usr/share/icons/*
 usr/share/kde4/apps/kdevappwizard/*
 usr/share/kde4/apps/kdevcmakebuilder/*
 usr/share/kde4/apps/kdevcmakemanager/*
-usr/share/kde4/apps/kdevcppdebugger/*
 usr/share/kde4/apps/kdevcppsupport/*
 usr/share/kde4/apps/kdevcustommakemanager/*
 usr/share/kde4/apps/kdevdocumentview/*
