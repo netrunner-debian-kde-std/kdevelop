@@ -1,4 +1,4 @@
-kdevelop (4:3.9.92-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.92-1) experimental; urgency=low
 
   * Initial upload of kdevelop 4 to experimental (Closes: #481832).
 
