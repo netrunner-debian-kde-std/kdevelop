@@ -5,3 +5,8 @@ include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
 binary-install/kdevelop::
 	install -D -p -m0644 debian/kdevelop.xpm \
 		debian/kdevelop/usr/share/pixmaps/kdevelop.xpm
+
+# Work around a conflict with kapptemplate
+binary-install/kdevelop-data::
+	rm -f debian/kdevelop-data/usr/share/kde4/apps/kdevappwizard/templates/qmake_qt4guiapp.tar.bz2
+

@@ -2,7 +2,7 @@ kdevelop (4:3.9.92-1) experimental; urgency=low
 
   * Initial upload of kdevelop 4 to experimental (Closes: #481832).
 
- -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 24 Feb 2009 13:57:54 +0000
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Mon, 27 Apr 2009 08:18:04 +0200
 
 kdevelop (4:3.5.2-1) unstable; urgency=low
 
