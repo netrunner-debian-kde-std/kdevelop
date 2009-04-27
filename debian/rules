@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 
-include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
+include /usr/share/pkg-kde-tools/makefiles/1/cdbs/kde.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
 
 binary-install/kdevelop::
 	install -D -p -m0644 debian/kdevelop.xpm \
@@ -8,5 +10,4 @@ binary-install/kdevelop::
 
 # Work around a conflict with kapptemplate
 binary-install/kdevelop-data::
-	rm -f debian/kdevelop-data/usr/share/kde4/apps/kdevappwizard/templates/qmake_qt4guiapp.tar.bz2
-
+	find debian/$(cdbs_curpkg) -type f -name qmake_qt4guiapp.tar.bz2 | xargs rm -f
