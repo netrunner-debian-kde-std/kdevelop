@@ -1,3 +1,11 @@
+kdevelop (4:3.9.93-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Add kdebase-workspace-dev build dependency.
+    It's needed for ksysguard widget.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 06 May 2009 09:12:18 +0200
+
 kdevelop (4:3.9.92-1) experimental; urgency=low
 
   * Initial upload of kdevelop 4 to experimental (Closes: #481832).
