@@ -9,8 +9,6 @@ usr/share/kde4/apps/kdevdocumentview/*
 usr/share/kde4/apps/kdevelop/*
 usr/share/kde4/apps/kdevgdb/*
 usr/share/kde4/apps/kdevgrepview/*
-usr/share/kde4/apps/kdevqmakebuilder/*
-usr/share/kde4/apps/kdevqtdesigner/*
 usr/share/kde4/apps/kdevqtest/*
 usr/share/kde4/apps/kdevvalgrind/*
 usr/share/kde4/config/*
