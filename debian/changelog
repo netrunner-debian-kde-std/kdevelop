@@ -1,10 +1,15 @@
-kdevelop (4:3.9.93-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.93-1) experimental; urgency=low
 
   * New upstream release.
   * Add kdebase-workspace-dev build dependency.
     It's needed for ksysguard widget.
+  * Bump kdevplatform build dependency from 0.9.92 to 0.9.93.
+  * Refresh 10_private_libs_soversion.diff patch:
+    qmake project manager is removed upstream.
+  * Update debian/kdevelop-data.install:
+    qmake builder and qtdesigner are removed upstream.
 
- -- Fathi Boudra <fabo@debian.org>  Wed, 06 May 2009 09:12:18 +0200
+ -- Fathi Boudra <fabo@debian.org>  Sun, 24 May 2009 13:14:49 +0200
 
 kdevelop (4:3.9.92-1) experimental; urgency=low
 
