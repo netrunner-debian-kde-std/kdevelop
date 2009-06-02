@@ -12,7 +12,9 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevelop
 
 Package: kdevelop
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}), lcov
+Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}),
+ lcov
+Recommends: gdb (>= 6.8.50), valgrind
 Description: An integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
@@ -36,7 +38,8 @@ Description: Data files for the KDevelop IDE
 
 Package: kdevelop-dev
 Architecture: any
-Depends: ${misc:Depends}, kdevelop (= ${binary:Version}), kdelibs5-dev, kdevplatform-dev
+Depends: ${misc:Depends}, kdevelop (= ${binary:Version}),
+ kdelibs5-dev, kdevplatform-dev
 Description: Development files for the KDevelop IDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project

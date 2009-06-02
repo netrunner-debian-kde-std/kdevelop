@@ -1,3 +1,11 @@
+kdevelop (4:3.9.93-2) UNRELEASED; urgency=low
+
+  * Add Recommends on:
+    - gdb >= 6.8.50. It is the minimal requirement.
+    - valgrind
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 02 Jun 2009 21:43:19 +0200
+
 kdevelop (4:3.9.93-1) experimental; urgency=low
 
   * New upstream release.
