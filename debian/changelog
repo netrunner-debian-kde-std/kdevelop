@@ -1,5 +1,6 @@
-kdevelop (4:3.9.93-2) UNRELEASED; urgency=low
+kdevelop (4:3.9.94-1) experimental; urgency=low
 
+  * New upstream release.
   * Add Recommends on:
     - gdb >= 6.8.50. It is the minimal requirement.
     - valgrind
