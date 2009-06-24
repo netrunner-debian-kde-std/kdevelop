@@ -4,6 +4,7 @@ kdevelop (4:3.9.94-1) experimental; urgency=low
   * Add Recommends on:
     - gdb >= 6.8.50. It is the minimal requirement.
     - valgrind
+  * Bump Standards-Version to 3.8.2 (no changes needed).
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 02 Jun 2009 21:43:19 +0200
 
