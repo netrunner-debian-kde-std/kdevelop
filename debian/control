@@ -15,7 +15,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}),
  lcov
 Recommends: gdb (>= 6.8.50), valgrind
-Description: An integrated development environment for KDE
+Description: integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
  management, an advanced editor, a class browser and an integrated debugger.
@@ -26,7 +26,7 @@ Description: An integrated development environment for KDE
 Package: kdevelop-data
 Architecture: all
 Depends: ${misc:Depends}
-Description: Data files for the KDevelop IDE
+Description: data files for the KDevelop IDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
  management, an advanced editor, a class browser and an integrated debugger.
@@ -40,7 +40,7 @@ Package: kdevelop-dev
 Architecture: any
 Depends: ${misc:Depends}, kdevelop (= ${binary:Version}),
  kdelibs5-dev, kdevplatform-dev
-Description: Development files for the KDevelop IDE
+Description: development files for the KDevelop IDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
  management, an advanced editor, a class browser and an integrated debugger.

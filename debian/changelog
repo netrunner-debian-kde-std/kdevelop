@@ -1,3 +1,9 @@
+kdevelop (4:3.9.94-2) UNRELEASED; urgency=low
+
+  +++ Changes by Frederik Schwarzer
+
+  * Fix typos and casing in packages descriptions
+
 kdevelop (4:3.9.94-1) experimental; urgency=low
 
   * New upstream release.
