@@ -1,8 +1,12 @@
-kdevelop (4:3.9.94-2) UNRELEASED; urgency=low
+kdevelop (4:3.9.94+svn1009869-1) experimental; urgency=low
 
-  +++ Changes by Frederik Schwarzer
+  * New snapshot from svn revision 1009869.
 
-  * Fix typos and casing in packages descriptions
+  +++ Changes by Frederik Schwarzer:
+
+  * Fix typos and casing in packages descriptions.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 11 Aug 2009 15:57:35 +0200
 
 kdevelop (4:3.9.94-1) experimental; urgency=low
 
