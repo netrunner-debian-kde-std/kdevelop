@@ -1,9 +1,10 @@
-kdevelop (4:3.9.95-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.95-1) experimental; urgency=low
 
-  * New upstream release.
+  * New upstream release (beta 5).
   * Update debian/kdevelop-data.install: remove usr/share/icons/* entry.
+  * Bump Standards-Version to 3.8.3 (no changes needed).
 
- -- Fathi Boudra <fabo@debian.org>  Sat, 15 Aug 2009 16:50:06 +0200
+ -- Fathi Boudra <fabo@debian.org>  Fri, 21 Aug 2009 11:31:57 +0200
 
 kdevelop (4:3.9.94+svn1010123-1) experimental; urgency=low
 
