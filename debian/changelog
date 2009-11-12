@@ -1,11 +1,12 @@
-kdevelop (4:3.9.96-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.96-1) experimental; urgency=low
 
   * New upstream release.
+  * Add 01_kdevelop_r1044086.diff and 02_kdevelop_r1044721.diff patches.
   * Remove kdevelop version fix.
   * Update debian/kdevelop-data.install: re-add usr/share/icons/* entry and
     update installed files.
 
- -- Fathi Boudra <fabo@debian.org>  Tue, 25 Aug 2009 10:57:44 +0200
+ -- Fathi Boudra <fabo@debian.org>  Thu, 12 Nov 2009 16:34:51 +0100
 
 kdevelop (4:3.9.95-2) experimental; urgency=low
 

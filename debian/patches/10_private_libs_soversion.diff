@@ -3,17 +3,17 @@
 @@ -22,6 +22,7 @@ set(kdevcpprpp_LIB_SRCS
  #       to the plugin target
  kde4_add_library(kdev4cpprpp SHARED ${kdevcpprpp_LIB_SRCS})
- target_link_libraries(kdev4cpprpp ${KDE4_KDECORE_LIBS} ${KDEVPLATFORM_LANGUAGE_LIBRARY} ${KDE4_KTEXTEDITOR_LIBS} )
+ target_link_libraries(kdev4cpprpp ${KDE4_KDECORE_LIBS} ${KDEVPLATFORM_LANGUAGE_LIBRARIES} ${KDE4_KTEXTEDITOR_LIBS} )
 +set_target_properties(kdev4cpprpp PROPERTIES SOVERSION ${PRIVATE_LIBS_SOVERSION})
  install(TARGETS kdev4cpprpp ${INSTALL_TARGETS_DEFAULT_ARGS} )
  
  ########### install files ###############
 --- a/languages/cpp/parser/CMakeLists.txt
 +++ b/languages/cpp/parser/CMakeLists.txt
-@@ -34,4 +34,5 @@ set(kdevcppparser_LIB_SRCS
+@@ -35,4 +35,5 @@ set(kdevcppparser_LIB_SRCS
  #       to the plugin target
  kde4_add_library(kdev4cppparser SHARED ${kdevcppparser_LIB_SRCS})
- target_link_libraries(kdev4cppparser ${KDEVPLATFORM_LANGUAGE_LIBRARY} ${KDE4_KDECORE_LIBS} ${KDE4_KTEXTEDITOR_LIBS} kdev4cpprpp )
+ target_link_libraries(kdev4cppparser ${KDEVPLATFORM_LANGUAGE_LIBRARIES} ${KDE4_KDECORE_LIBS} ${KDE4_KTEXTEDITOR_LIBS} kdev4cpprpp )
 +set_target_properties(kdev4cppparser PROPERTIES SOVERSION ${PRIVATE_LIBS_SOVERSION})
  install(TARGETS kdev4cppparser ${INSTALL_TARGETS_DEFAULT_ARGS} )
 --- a/languages/cpp/cppduchain/CMakeLists.txt
@@ -29,8 +29,8 @@
 --- a/projectmanagers/cmake/CMakeLists.txt
 +++ b/projectmanagers/cmake/CMakeLists.txt
 @@ -70,6 +70,7 @@ target_link_libraries( kdev4cmakecommon 
-                         ${KDE4_KTEXTEDITOR_LIBS} ${KDEVPLATFORM_INTERFACES_LIBRARY} ${KDEVPLATFORM_PROJECT_LIBRARY}
-                         ${QT_QTSCRIPT_LIBRARY} ${KDEVPLATFORM_LANGUAGE_LIBRARY}
+                         ${KDE4_KTEXTEDITOR_LIBS} ${KDEVPLATFORM_INTERFACES_LIBRARIES} ${KDEVPLATFORM_PROJECT_LIBRARIES}
+                         ${QT_QTSCRIPT_LIBRARY} ${KDEVPLATFORM_LANGUAGE_LIBRARIES}
                          )
 +set_target_properties(kdev4cmakecommon PROPERTIES SOVERSION ${PRIVATE_LIBS_SOVERSION})
  

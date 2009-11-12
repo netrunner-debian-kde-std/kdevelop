@@ -1,0 +1,11 @@
+--- a/languages/cpp/codegen/signatureassistant.cpp
++++ b/languages/cpp/codegen/signatureassistant.cpp
+@@ -155,7 +155,7 @@ QString makeSignatureString(Signature si
+     if(!item.second.isEmpty())
+       ret += " " + item.second;
+     
+-    if (!signature.defaultParams[pos].isEmpty())
++    if (signature.defaultParams.size() > pos && !signature.defaultParams[pos].isEmpty())
+       ret += " = " + signature.defaultParams[pos];
+     
+     ++pos;
