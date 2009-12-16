@@ -28,7 +28,7 @@
  ########### install files ###############
 --- a/projectmanagers/cmake/CMakeLists.txt
 +++ b/projectmanagers/cmake/CMakeLists.txt
-@@ -70,6 +70,7 @@ target_link_libraries( kdev4cmakecommon 
+@@ -71,6 +71,7 @@ target_link_libraries( kdev4cmakecommon 
                          ${KDE4_KTEXTEDITOR_LIBS} ${KDEVPLATFORM_INTERFACES_LIBRARIES} ${KDEVPLATFORM_PROJECT_LIBRARIES}
                          ${QT_QTSCRIPT_LIBRARY} ${KDEVPLATFORM_LANGUAGE_LIBRARIES}
                          )
@@ -38,10 +38,10 @@
  kde4_add_plugin( kdevcmakemanager ${cmakemanager_SRCS} )
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -7,6 +7,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR
+@@ -7,6 +7,7 @@ set(CMAKE_MODULE_PATH ${KDevelop_SOURCE_
  set( KDEVELOP_VERSION_MAJOR 3 )
  set( KDEVELOP_VERSION_MINOR 9 )
- set( KDEVELOP_VERSION_PATCH 96 )
+ set( KDEVELOP_VERSION_PATCH 97 )
 +set(PRIVATE_LIBS_SOVERSION ${KDEVELOP_VERSION_MAJOR}.${KDEVELOP_VERSION_MINOR}.${KDEVELOP_VERSION_PATCH})
  
  set(KDE_MIN_VERSION "4.3.0")

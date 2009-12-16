@@ -1,6 +1,8 @@
-kdevelop (4:3.9.97-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.97-1) experimental; urgency=low
 
   * New upstream release.
+  * Drop 01_kdevelop_r1044086.diff and 02_kdevelop_r1044721.diff patches.
+  * Update debian/kdevelop-data.install: remove valgrind plugin.
 
  -- Fathi Boudra <fabo@debian.org>  Sat, 12 Dec 2009 20:47:28 +0100
 
