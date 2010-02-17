@@ -2,6 +2,10 @@
 
 include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
 
+# workaround FindKDE4Internal.cmake default rpath value
+# see bug http://bugs.debian.org/564146
+DEB_CMAKE_CUSTOM_FLAGS += -DCMAKE_SKIP_RPATH=ON
+
 binary-install/kdevelop::
 	install -D -p -m0644 debian/kdevelop.xpm \
 		debian/kdevelop/usr/share/pixmaps/kdevelop.xpm

@@ -1,6 +1,18 @@
-kdevelop (4:3.9.98-1) UNRELEASED; urgency=low
+kdevelop (4:3.9.98-1) experimental; urgency=low
 
   * New upstream release.
+
+  [ Fathi Boudra ]
+  * Remove 10_private_libs_soversion.diff patch.
+  * Update debian/control:
+    - Bump build dependencies versions (debhelper, pkg-kde-tools and
+      kdevplatform-dev).
+    - Bump Standards-Version to 3.8.4 (no changes needed).
+  * Update debian/kdevelop-dev.install file.
+  * Update debian/kdevelop.install file.
+  * Add debian/kdevelop.lintian-overrides file.
+  * Update debian/rules: pass -DCMAKE_SKIP_RPATH=ON
+    to workaround FindKDE4Internal.cmake default rpath value.
 
   [ Modestas Vainius ]
   * Fix Vcs-Browser URL.
@@ -240,7 +252,7 @@ kdevelop (4:3.3.2-5) unstable; urgency=low
 
   * Remove circular dependencies (Closes: #368474)
   * Merge kdevelop-plugins into kdevelop
-  * Add Recommends on libtool (Closes: #284694) 
+  * Add Recommends on libtool (Closes: #284694)
   * Update to standards version 3.7.2
   * Update versioned Build-Depends on debhelper to >= 5
   * Add debian/watch file
@@ -270,7 +282,7 @@ kdevelop3 (4:3.3.2-1) unstable; urgency=low
 
 kdevelop3 (4:3.3.1-1) unstable; urgency=low
 
-  * New upstream release 
+  * New upstream release
   - fix code completion for external libraries (Closes: #355444, #351290)
   * Build-Depends on automake1.9, not automaken
   * Fix KOffice part C++ template (Closes: #345279)
@@ -292,7 +304,7 @@ kdevelop3 (4:3.3.0-1) unstable; urgency=low
   * Add Jeremy Lainé to maintainers, acknowledge NMU fixes (Closes: #274966,
     #295659, #302133, #304203, #304419, #306485, #309351, #311153, #312160,
     #312161, #315170, #326883, #326929, #327710, #327730, #330037, #330038,
-    #331346, #336094, #341990) 
+    #331346, #336094, #341990)
   * Switch to Debian Qt/KDE team's CDBS scripts
   * Update Suggests and README.Debian regarding SVN integration
   * Remove explicit Build-Depends on g++-3.4 (Closes: #342991)
@@ -352,7 +364,7 @@ kdevelop3 (4:3.2.2-0.2) unstable; urgency=low
   * Non-maintainer upload
   * Fix kdevdesigner crash on start (Closes: #309351)
   * Fix kdevassistant crash on start (Closes: #274966)
-  * Fix file permissions of Python/Qt examples (Closes: #330037, #330038) 
+  * Fix file permissions of Python/Qt examples (Closes: #330037, #330038)
 
  -- Jeremy Lainé <jeremy.laine@m4x.org>  Thu, 15 Sep 2005 08:37:32 +0200
 
@@ -363,15 +375,15 @@ kdevelop3 (4:3.2.2-0.1) unstable; urgency=low
   * Build against new Qt / KDE libraries (Closes: #326929)
   * Fix lintian warnings:
    - Update to Standards-Version 3.6.2
-   - Replace possible bashism "-a" by "&&" in debian/config  
+   - Replace possible bashism "-a" by "&&" in debian/config
   * Add Suggests on kdesdk-misc to provide kio_svn files
   * Translation fixes:
-   - Fix debian/templates.master, run debconf-updatepo (Closes: #312161) 
+   - Fix debian/templates.master, run debconf-updatepo (Closes: #312161)
    - Add Vietnamese debconf translation (Closes: #312160)
    - Update Brazilian translation (Closes: #304419)
   * Fix adding new classes to qmake projects (Closes: #315170)
   * Remove X-KDE-KDevelopIDE category from .desktop entries
-  * Add --disable-rpath to configure flags (Closes: #327710) 
+  * Add --disable-rpath to configure flags (Closes: #327710)
   * Fix debian/menu , package is 'kdevelop3' not 'kdevelop' (Closes: #311153)
   * Fix some references to 'kdevelop' in .desktop files (Closes: #304203)
   * Add missing Depends on debconf (Closes: #327730)
@@ -866,7 +878,7 @@ kdevelop (1:2.0b1-1) unstable; urgency=low
 
 kdevelop (1:1.4.0-3.4) unstable; urgency=low
 
-  * Updated the build-depends field 
+  * Updated the build-depends field
 
  -- Norman Jordan <njordan@debian.org>  Sun, 13 May 2001 22:17:08 -0700
 
@@ -880,52 +892,52 @@ kdevelop (1:1.4.0-3.2) unstable; urgency=low
 
   * Change Maintainer (Closes: #90814)
   * No longer installs extractrc (Closes: #93012)
-  * Suggests kdesdk-scripts 
+  * Suggests kdesdk-scripts
 
  -- Norman Jordan <njordan@debian.org>  Thu,  5 Apr 2001 11:03:57 -0700
 
 kdevelop (1:1.4.0-3.1) unstable; urgency=low
- 
+
   * NMU
   * Fixing build-depends (Closes: #92190)
- 
+
  -- Ivan E. Moore II <rkrusty@debian.org>  Fri, 30 Mar 2001 21:22:00 -0700
 
 kdevelop (1:1.4.0-3) unstable; urgency=low
- 
+
   * Change Maintainer
   * More upstream fixes while I'm at it
- 
+
  -- Ivan E. Moore II <rkrusty@debian.org>  Fri, 23 Mar 2001 03:00:00 -0700
 
 kdevelop (1:1.4.0-2) unstable; urgency=low
- 
+
   * Removed non en docs as they are provided in kde-i18n now
- 
+
  -- Ivan E. Moore II <rkrusty@debian.org>  Sun, 04 Mar 2001 20:00:00 -0700
 
 kdevelop (1:1.4.0-1) unstable; urgency=low
- 
+
   * Cleaned up source based off of current CVS branch
   * Fix desktop file (Closes: #87802)
   * Update Build-Depends
   * If you install qt-doc and not qt2.2-doc this works (Closes: #88185)
- 
+
  -- Ivan E. Moore II <rkrusty@debian.org>  Fri, 02 Mar 2001 07:00:00 -0700
 
 kdevelop (1:1.4-final-1) unstable; urgency=low
- 
+
   * New upstream release
   * Fix kde-i18n conflicts (Closes: #87381)
- 
+
  -- Ivan E. Moore II <rkrusty@debian.org>  Mon, 19 Feb 2001 02:06:00 -0700
 
 kdevelop (1:1.4-20010218-1) unstable; urgency=low
- 
+
   * New upstream cvs pull
   * New upload to Debian with permission of Raphael Bossek who did the ITP
   * Updating for potato/woody/sid
- 
+
  -- Ivan E. Moore II <rkrusty@debian.org>  Sun, 18 Feb 2001 02:06:00 -0700
 
 kdevelop (1:1.4-20010127-1) unstable; urgency=low
@@ -946,7 +958,7 @@ kdevelop (1:1.1final-20000228-1) stable; urgency=low
 kdevelop (1:1.1beta2-20000206-1) stable; urgency=low
 
   * Back to old configure arguments
-  * Mentioned debugger in control file, 
+  * Mentioned debugger in control file,
     made kdebase a dependency
 
  -- Bernd Gehrmann <bernd@physik.hu-berlin.de>  Mon,  7 Feb 2000 00:10:59 +0100
@@ -1023,7 +1035,7 @@ kdevelop (990531-1) experimental; urgency=low
 
 kdevelop (990422-1) experimental; urgency=low
 
-  * Initial Release 
+  * Initial Release
 
  -- Bernd Gehrmann <bernd@physik.hu-berlin.de>  Thu, 22 Apr 1999 20:33:18 +0200
 
