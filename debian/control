@@ -15,6 +15,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}),
  lcov
 Recommends: gdb (>= 6.8.50), valgrind
+Suggests: cmake
 Description: integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
