@@ -35,7 +35,7 @@ Upstream Authors:
   Jens Dagerbo  <jens.dagerbo@swipnet.se>
   Robert Gruber <rgruber@users.sourceforge.net>
 
-Copyright: 1999-2006 The KDevelop developers
+Copyright: 1999-2010 The KDevelop developers
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -55,8 +55,8 @@ Fifth Floor, Boston, MA 02110-1301, USA.
 On Debian GNU/Linux systems, the complete text of the GNU General Public
 License, version 2, can be found in `/usr/share/common-licenses/GPL-2'.
 
-The Debian packaging is (C) 1999-2008 Bernd Gehrmann 
-<bernd@physik.hu-berlin.de>, Ivan E. Moore II <rkrusty@debian.org>, 
+The Debian packaging is (C) 1999-2008 Bernd Gehrmann
+<bernd@physik.hu-berlin.de>, Ivan E. Moore II <rkrusty@debian.org>,
 Norman Jordan <njordan@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
 Fathi Boudra <fabo@debian.org> and is licensed under the GPL, see above.
 

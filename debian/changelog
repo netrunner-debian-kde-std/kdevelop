@@ -1,6 +1,9 @@
-kdevelop (4:3.9.98-2) UNRELEASED; urgency=low
+kdevelop (4:3.9.99-1) experimental; urgency=low
 
-  * Update debian/control: suggests cmake package.
+  * New upstream release.
+  * Update debian/control:
+    - Suggests cmake package. (Closes: #561507)
+    - Bump kdevplatform-dev build dependency version.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 18 Feb 2010 09:43:49 +0100
 

@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs, debhelper (>= 7.4.13), quilt, cmake, pkg-kde-tools (>= 0.6.4),
- kdevplatform-dev (>= 0.9.98), kdebase-workspace-dev (>= 4:4.3.4)
+ kdevplatform-dev (>= 0.9.99), kdebase-workspace-dev (>= 4:4.3.4)
 Standards-Version: 3.8.4
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevelop/#_trunk_packages_kdevelop_
