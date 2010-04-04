@@ -1,3 +1,9 @@
+kdevelop (4:3.10.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 04 Apr 2010 11:45:29 +0200
+
 kdevelop (4:3.9.99-1) experimental; urgency=low
 
   * New upstream release.
