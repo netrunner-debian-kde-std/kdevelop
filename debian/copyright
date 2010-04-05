@@ -1,62 +1,84 @@
-This package was debianized by Bernd Gehrmann <bernd@physik.hu-berlin.de>,
-then maintained by Ivan E. Moore II <rkrusty@debian.org> and
-Norman Jordan <njordan@debian.org>.
+This work was packaged for Debian by:
 
-The current Debian maintainer is Jeremy Lainé <jeremy.laine@m4x.org>.
+    Bernd Gehrmann <bernd@physik.hu-berlin.de>
+    Ivan E. Moore II <rkrusty@debian.org>
+    Norman Jordan <njordan@debian.org>
+    Jeremy Lainé <sharky@debian.org>
+    Fathi Boudra <fabo@debian.org>
 
-It was downloaded from http://www.kdevelop.org/
+It was downloaded from:
+
+    http://www.kdevelop.org
 
 Upstream Authors:
 
-  Bernd Gehrmann <bernd@physik.hu-berlin.de>
-  John Birch <jbb@kdevelop.org>
-  Jonas Nordin <jonas.nordin@cenacle.se>
-  Richard Dale <Richard_Dale@tipitina.demon.co.uk>
-  Sandy Meier <smeier@kdevelop.org>
-  Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
-  Victor Roeder <victor_roeder@gmx.de>
-  Kurth Granroth <kurt@granroth.org>
-  The KWrite authors <kwrite-devel@kde.org>
-  Roberto Raggi <roberto@kdevelop.org>
-  Harald Fernengel <harry@kdevelop.org>
-  Simon Hausmann <hausmann@kde.org>
-  Mickael Marchand <marchand@kde.org>
-  Dominic Seichter <domseichter@t-online.de>
-  Yann Hodique <Yann.Hodique@lifl.fr>
-  Heinz Hornung <Hornung-Heinz@t-online.de>
-  Marion Klein <MarionKlein@wanadoo.fr>
-  Ramón Lamana Villar <ramon@alumnos.upm.es>
-  Caleb Tennis <caleb@aei-tech.com>
-  Mario Scalas <mario.scalas@libero.it>
-  Alexander Dymo <cloudtemple@mksat.net>
-  Dominik Haumann <dhdev@gmx.de>
-  Ian Reinhart Geiser <geiseri@kde.org>
-  Amilcar Lucas <a.lucas@tu-bs.de>
-  Jens Dagerbo  <jens.dagerbo@swipnet.se>
-  Robert Gruber <rgruber@users.sourceforge.net>
+    Andreas Pakulat <apaku@gmx.de>
+    Alexander Dymo <adymo@kdevelop.org>
+    David Nolden <david.nolden.kdevelop@art-master.de>
+    Aleix Pol Gonzalez <aleixpol@gmail.com>
+    Vladimir Prus <ghost@cs.msu.su>
+    Hamish Rodda <rodda@kde.org>
+    Amilcar do Carmo Lucas <amilcar@kdevelop.org>
+    Niko Sams <niko.sams@gmail.com>
+    Milian Wolff <mail@milianw.de>
+    Bernd Gehrmann <bernd@physik.hu-berlin.de>
+    John Birch <jbb@kdevelop.org>
+    Jonas Nordin <jonas.nordin@cenacle.se>
+    Richard Dale <Richard_Dale@tipitina.demon.co.uk>
+    Sandy Meier <smeier@kdevelop.org>
+    Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+    Victor Roeder <victor_roeder@gmx.de>
+    Kurth Granroth <kurt@granroth.org>
+    The KWrite authors <kwrite-devel@kde.org>
+    Roberto Raggi <roberto@kdevelop.org>
+    Harald Fernengel <harry@kdevelop.org>
+    Simon Hausmann <hausmann@kde.org>
+    Mickael Marchand <marchand@kde.org>
+    Dominic Seichter <domseichter@t-online.de>
+    Yann Hodique <Yann.Hodique@lifl.fr>
+    Heinz Hornung <Hornung-Heinz@t-online.de>
+    Marion Klein <MarionKlein@wanadoo.fr>
+    Ramón Lamana Villar <ramon@alumnos.upm.es>
+    Caleb Tennis <caleb@aei-tech.com>
+    Mario Scalas <mario.scalas@libero.it>
+    Dominik Haumann <dhdev@gmx.de>
+    Ian Reinhart Geiser <geiseri@kde.org>
+    Jens Dagerbo  <jens.dagerbo@swipnet.se>
+    Robert Gruber <rgruber@users.sourceforge.net>
 
-Copyright: 1999-2010 The KDevelop developers
+Copyright:
 
-This program is free software; you can redistribute it and/or modify
+    Copyright (C) 1999-2010 The KDevelop developers
+
+License:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>
+
+On Debian systems, the complete text of the GNU General
+Public License version 2 and version 3 can be found in
+"/usr/share/common-licenses/GPL-2" and "/usr/share/common-licenses/GPL-3".
+
+The Debian packaging is:
+
+    Copyright (C) 2009-2010 Fathi Boudra <fabo@debian.org>
+    Copyright (C) 2005-2009 Jeremy Lainé <sharky@debian.org>
+    Copyright (C) 2001-2005 Norman Jordan <njordan@debian.org>
+    Copyright (C) 1999-2001 Ivan E. Moore II <rkrusty@debian.org>
+    Copyright (C) 1999-2000 Bernd Gehrmann <bernd@physik.hu-berlin.de>
+
+you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
 (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License with
-the Debian GNU/Linux distribution in file /usr/share/common-licenses/GPL;
-if not, write to the Free Software Foundation, Inc., 51 Franklin St,
-Fifth Floor, Boston, MA 02110-1301, USA.
-
-On Debian GNU/Linux systems, the complete text of the GNU General Public
-License, version 2, can be found in `/usr/share/common-licenses/GPL-2'.
-
-The Debian packaging is (C) 1999-2008 Bernd Gehrmann
-<bernd@physik.hu-berlin.de>, Ivan E. Moore II <rkrusty@debian.org>,
-Norman Jordan <njordan@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
-Fathi Boudra <fabo@debian.org> and is licensed under the GPL, see above.
 

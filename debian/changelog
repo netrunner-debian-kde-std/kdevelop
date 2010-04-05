@@ -1,6 +1,9 @@
 kdevelop (4:3.10.0-1) experimental; urgency=low
 
   * New upstream release.
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * Update debian/copyright: update authors list.
+  * Add debian/kdevelop.lintian-overrides: override postinst/postrm errors.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 04 Apr 2010 11:45:29 +0200
 
@@ -1054,6 +1057,3 @@ kdevelop (990422-1) experimental; urgency=low
 
  -- Bernd Gehrmann <bernd@physik.hu-berlin.de>  Thu, 22 Apr 1999 20:33:18 +0200
 
-Local variables:
-mode: debian-changelog
-End:
