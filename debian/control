@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs, debhelper (>= 7.4.15), quilt, cmake, pkg-kde-tools (>= 0.6.4),
- kdevplatform-dev (>= 0.10.0), kdebase-workspace-dev (>= 4:4.3.4)
+ kdevplatform-dev (>= 0.10.2), kdebase-workspace-dev (>= 4:4.3.4)
 Standards-Version: 3.8.4
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevelop/#_trunk_packages_kdevelop_
@@ -15,7 +15,7 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}),
  lcov
 Recommends: gdb (>= 7.0), valgrind
-Suggests: cmake
+Suggests: cmake, kdevelop-l10n
 Description: integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
@@ -50,3 +50,184 @@ Description: development files for the KDevelop IDE
  for terminal programs and GUI programs using Qt, KDE or GNOME.
  .
  This package contains development files for KDevelop.
+
+Package: kdevelop-l10n-ca
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-ca
+Provides: kdevelop-l10n
+Description: Catalan (ca) localization files for the KDevelop IDE
+ This package contains the Catalan translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-cavalencia
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-cavalencia
+Provides: kdevelop-l10n
+Description: Southern Catalan (Valencian) (ca@valencia) files for the KDevelop IDE
+ This package contains the Southern Catalan (Valencian) translations
+ for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-da
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-da
+Provides: kdevelop-l10n
+Description: Danish (da) localization files for the KDevelop IDE
+ This package contains the Danish translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-de
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-de
+Provides: kdevelop-l10n
+Description: German (de) localization files for the KDevelop IDE
+ This package contains the German translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-engb
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-engb
+Provides: kdevelop-l10n
+Description: British English (en_GB) localization files for the KDevelop IDE
+ This package contains the British English translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-es
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-es
+Provides: kdevelop-l10n
+Description: Spanish (es) localization files for the KDevelop IDE
+ This package contains the Spanish translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-et
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-et
+Provides: kdevelop-l10n
+Description: Estonian (et) localization files for the KDevelop IDE
+ This package contains the Estonian translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-fr
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-fr
+Provides: kdevelop-l10n
+Description: French (fr) localization files for the KDevelop IDE
+ This package contains the French translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-gl
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-gl
+Provides: kdevelop-l10n
+Description: Galician (gl) localization files for the KDevelop IDE
+ This package contains the Galician translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-it
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-it
+Provides: kdevelop-l10n
+Description: Italian (it) localization files for the KDevelop IDE
+ This package contains the Italian translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-nds
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-nds
+Provides: kdevelop-l10n
+Description: Low Saxon (nds) localization files for the KDevelop IDE
+ This package contains the Low Saxon translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-pt
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-pt
+Provides: kdevelop-l10n
+Description: Portugese (pt) localization files for the KDevelop IDE
+ This package contains the Portugese translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-ptbr
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-ptbr
+Provides: kdevelop-l10n
+Description: Brazilian Portugese (pt_BR) localization files for the KDevelop IDE
+ This package contains the Brazilian Portugese translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-sv
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-sv
+Provides: kdevelop-l10n
+Description: Swedish (sv) localization files for the KDevelop IDE
+ This package contains the Swedish translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-tr
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-tr
+Provides: kdevelop-l10n
+Description: Turkish (tr) localization files for the KDevelop IDE
+ This package contains the Turkish translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-uk
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-uk
+Provides: kdevelop-l10n
+Description: Ukrainian (uk) localization files for the KDevelop IDE
+ This package contains the Ukrainian translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-zhcn
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-zhcn
+Provides: kdevelop-l10n
+Description: Chinese Simplified (zh_CN) localization files for the KDevelop IDE
+ This package contains the Chinese Simplified translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
+Package: kdevelop-l10n-zhtw
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-zhtw
+Provides: kdevelop-l10n
+Description: Chinese Traditional (zh_TW) localization files for the KDevelop IDE
+ This package contains the Chinese Traditional translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
