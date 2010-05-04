@@ -1,12 +1,11 @@
-kdevelop (4:4.0.0-1) UNRELEASED; urgency=low
+kdevelop (4:4.0.0-1) experimental; urgency=low
 
-  * New upstream release.
-
-  [ Jeremy Lainé ]
+  * New upstream release (Closes: #579947, #481832).
   * Update debian/control:
     - Bump kdevplatform-dev build dependency version.
+  * Acknowledge obsolete NMU fixes (Closes: #562410, #546961).
 
- -- Jeremy Lainé <jeremy.laine@m4x.org>  Mon, 03 May 2010 22:39:05 +0200
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 04 May 2010 08:12:22 +0200
 
 kdevelop (4:3.10.2-1) experimental; urgency=low
 
