@@ -1,3 +1,10 @@
+kdevelop (4:4.0.0-2) unstable; urgency=low
+
+  * Upload to unstable (Closes: #579947, #481832).
+  * Acknowledge obsolete NMU fixes (Closes: #562410, #546961).
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Wed, 05 May 2010 07:21:55 +0200
+
 kdevelop (4:4.0.0-1) experimental; urgency=low
 
   * New upstream release (Closes: #579947, #481832).
