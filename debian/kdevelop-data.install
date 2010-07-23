@@ -7,3 +7,4 @@ usr/share/kde4/apps/kdevcustommakemanager/*
 usr/share/kde4/apps/kdevelop/*
 usr/share/kde4/apps/kdevgdb/*
 usr/share/kde4/config/*
+usr/share/mime/packages/kdevelop.xml
