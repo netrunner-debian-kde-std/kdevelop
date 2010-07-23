@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
 Build-Depends: cdbs, debhelper (>= 7.4.15), quilt, cmake, pkg-kde-tools (>= 0.6.4),
- kdevplatform-dev (>= 1.0.0), kdebase-workspace-dev (>= 4:4.3.4)
-Standards-Version: 3.8.4
+ kdevplatform-dev (>= 1.0.1), kdebase-workspace-dev (>= 4:4.4.1), shared-mime-info
+Standards-Version: 3.9.0
 Homepage: http://www.kdevelop.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevelop/#_trunk_packages_kdevelop_
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevelop
@@ -122,6 +122,16 @@ Description: Estonian (et) localization files for the KDevelop IDE
  .
  This package is part of the KDevelop IDE.
 
+Package: kdevelop-l10n-fi
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-fi
+Provides: kdevelop-l10n
+Description: Finnish (fi) localization files for the KDevelop IDE
+ This package contains the Finnish translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
 Package: kdevelop-l10n-fr
 Section: localization
 Architecture: all
@@ -162,6 +172,16 @@ Description: Low Saxon (nds) localization files for the KDevelop IDE
  .
  This package is part of the KDevelop IDE.
 
+Package: kdevelop-l10n-nl
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-nl
+Provides: kdevelop-l10n
+Description: Dutch (nl) localization files for the KDevelop IDE
+ This package contains the Dutch translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
 Package: kdevelop-l10n-pt
 Section: localization
 Architecture: all
@@ -182,6 +202,16 @@ Description: Brazilian Portugese (pt_BR) localization files for the KDevelop IDE
  .
  This package is part of the KDevelop IDE.
 
+Package: kdevelop-l10n-sl
+Section: localization
+Architecture: all
+Recommends: kdevplatform-l10n-sl
+Provides: kdevelop-l10n
+Description: Slovenian (sl) localization files for the KDevelop IDE
+ This package contains the Slovenian translations for KDevelop.
+ .
+ This package is part of the KDevelop IDE.
+
 Package: kdevelop-l10n-sv
 Section: localization
 Architecture: all
@@ -192,15 +222,25 @@ Description: Swedish (sv) localization files for the KDevelop IDE
  .
  This package is part of the KDevelop IDE.
 
-Package: kdevelop-l10n-tr
+Package: kdevelop-l10n-th
 Section: localization
 Architecture: all
-Recommends: kdevplatform-l10n-tr
+Recommends: kdevplatform-l10n-th
 Provides: kdevelop-l10n
-Description: Turkish (tr) localization files for the KDevelop IDE
- This package contains the Turkish translations for KDevelop.
+Description: Thai (th) localization files for the KDevelop IDE
+ This package contains the Thai translations for KDevelop.
  .
  This package is part of the KDevelop IDE.
+
+#Package: kdevelop-l10n-tr
+#Section: localization
+#Architecture: all
+#Recommends: kdevplatform-l10n-tr
+#Provides: kdevelop-l10n
+#Description: Turkish (tr) localization files for the KDevelop IDE
+# This package contains the Turkish translations for KDevelop.
+# .
+# This package is part of the KDevelop IDE.
 
 Package: kdevelop-l10n-uk
 Section: localization
