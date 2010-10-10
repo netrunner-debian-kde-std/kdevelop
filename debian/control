@@ -51,6 +51,21 @@ Description: development files for the KDevelop IDE
  .
  This package contains development files for KDevelop.
 
+Package: kdevelop-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: kdevelop (= ${binary:Version}), kdelibs5-dbg
+Description: debugging symbols for KDevelop
+ KDevelop is an easy to use integrated development environment for KDE.
+ It supports a wide range of programming languages and features project
+ management, an advanced editor, a class browser and an integrated debugger.
+ .
+ The application wizard can generate fully functional projects
+ for terminal programs and GUI programs using Qt, KDE or GNOME.
+ .
+ This package contains debugging symbols for KDevelop.
+
 Package: kdevelop-l10n-ca
 Section: localization
 Architecture: all

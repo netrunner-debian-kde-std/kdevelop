@@ -1,6 +1,7 @@
 kdevelop (4:4.0.1-2) UNRELEASED; urgency=low
 
   * Add debian/watch file to track upstream versions.
+  * Add kdevelop-dbg package with KDevelop debugging symbols. Fixes #593634.
 
  -- Nicolás Alvarez <nicolas.alvarez@gmail.com>  Sun, 10 Oct 2010 16:44:47 -0300
 
