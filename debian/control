@@ -2,7 +2,8 @@ Source: kdevelop
 Section: devel
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
+ George Kiagiadakis <kiagiadakis.george@gmail.com>
 Build-Depends: cdbs, debhelper (>= 7.4.15), quilt, cmake, pkg-kde-tools (>= 0.6.4),
  kdevplatform-dev (>= 1.0.1), kdebase-workspace-dev (>= 4:4.4.1), shared-mime-info
 Standards-Version: 3.9.0
