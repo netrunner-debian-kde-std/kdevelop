@@ -12,6 +12,7 @@ kdevelop (4:4.1.0-0r1) UNRELEASED; urgency=low
   * Change the Vcs-* fields in debian/control to point to git.
   * Disable the french localization package; not shipped in this release.
   * Add new localization package for Russian (ru).
+  * Update installed files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 16:15:29 +0200
 
