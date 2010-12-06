@@ -1,4 +1,4 @@
-kdevelop (4:4.1.0-0r1) UNRELEASED; urgency=low
+kdevelop (4:4.1.1-0r1) UNRELEASED; urgency=low
 
   * New upstream release (Closes: #603063).
 
@@ -13,7 +13,6 @@ kdevelop (4:4.1.0-0r1) UNRELEASED; urgency=low
   * Bump build dependency on kdevplatform-dev to version 1.1.0.
   * Change the Vcs-* fields in debian/control to point to git.
   * Disable the french localization package; not shipped in this release.
-  * Add new localization package for Russian (ru).
   * Update installed files.
   * Bump Standards-Version to 3.9.1 (no changes needed).
 
