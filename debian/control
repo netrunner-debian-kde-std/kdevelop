@@ -218,15 +218,15 @@ Description: Brazilian Portugese (pt_BR) localization files for the KDevelop IDE
  .
  This package is part of the KDevelop IDE.
 
-Package: kdevelop-l10n-ru
-Section: localization
-Architecture: all
+#Package: kdevelop-l10n-ru
+#Section: localization
+#Architecture: all
 #Recommends: kdevplatform-l10n-ru
-Provides: kdevelop-l10n
-Description: Russian (ru) localization files for the KDevelop IDE
- This package contains the Russian translations for KDevelop.
- .
- This package is part of the KDevelop IDE.
+#Provides: kdevelop-l10n
+#Description: Russian (ru) localization files for the KDevelop IDE
+# This package contains the Russian translations for KDevelop.
+# .
+# This package is part of the KDevelop IDE.
 
 Package: kdevelop-l10n-sl
 Section: localization
