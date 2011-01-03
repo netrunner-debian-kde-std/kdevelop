@@ -9,3 +9,5 @@ binary-install/kdevelop::
 # Work around a conflict with kapptemplate
 binary-install/kdevelop-data::
 	find debian/$(cdbs_curpkg) -type f -name qmake_qt4guiapp.tar.bz2 | xargs rm -f
+
+DEB_DBG_PACKAGE_kdevelop := kdevelop-dbg
