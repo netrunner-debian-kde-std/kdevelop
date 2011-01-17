@@ -158,15 +158,15 @@ Description: Estonian (et) localization files for the KDevelop IDE
 # .
 # This package is part of the KDevelop IDE.
 
-Package: kdevelop-l10n-gl
-Section: localization
-Architecture: all
-Recommends: kdevplatform-l10n-gl
-Provides: kdevelop-l10n
-Description: Galician (gl) localization files for the KDevelop IDE
- This package contains the Galician translations for KDevelop.
- .
- This package is part of the KDevelop IDE.
+#Package: kdevelop-l10n-gl
+#Section: localization
+#Architecture: all
+#Recommends: kdevplatform-l10n-gl
+#Provides: kdevelop-l10n
+#Description: Galician (gl) localization files for the KDevelop IDE
+# This package contains the Galician translations for KDevelop.
+# .
+# This package is part of the KDevelop IDE.
 
 Package: kdevelop-l10n-it
 Section: localization
