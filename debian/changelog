@@ -5,7 +5,9 @@ kdevelop (4:4.2.0-0r1) UNRELEASED; urgency=low
   [ Andreas Cord-Landwehr ]
   * Comment Galician localization package; not shipped in this release
   * Comment Finish localization package; not shipped in this release
-  * Enabled French localization package
+  * Add French localization package
+  * Uncomment Russian localization package
+  * Add Norwegian Bookmal localization package
 
   [ Nicolás Alvarez ]
   * Add debian/watch file to track upstream versions.
