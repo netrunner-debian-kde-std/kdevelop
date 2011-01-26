@@ -1,15 +1,11 @@
-kdevelop (4:4.1.90-0r1) UNRELEASED; urgency=low
-
-  * New Upstream Release
-  * Disabled Galician localization package; not shipped in this release
-  * Disabled Finish localization package; not shipped in this release
-  * Enabled French localization package
-
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 17 Jan 2011 16:15:29 +0200
-
-kdevelop (4:4.1.1-0r1) UNRELEASED; urgency=low
-
+kdevelop (4:4.2.0-0r1) UNRELEASED; urgency=low
+  
   * New upstream release (Closes: #603063).
+
+  [ Andreas Cord-Landwehr ]
+  * Comment Galician localization package; not shipped in this release
+  * Comment Finish localization package; not shipped in this release
+  * Enabled French localization package
 
   [ Nicolás Alvarez ]
   * Add debian/watch file to track upstream versions.
