@@ -31,6 +31,12 @@ kdevelop (4:4.2.0-0r1) UNRELEASED; urgency=low
   * Update installed files.
   * Bump Standards-Version to 3.9.1 (no changes needed).
 
+  [ Pino Toscano ]
+  * Modify recommends and suggests for kdevelop:
+    - recommend gcc, g++, make (Closes: #597642)
+    - suggest kapptemplate
+    - remove valgrind
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 16:15:29 +0200
 
 kdevelop (4:4.0.1-1) unstable; urgency=low
