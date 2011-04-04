@@ -1,4 +1,4 @@
-kdevelop (4:4.2.0-0r1) UNRELEASED; urgency=low
+kdevelop (4:4.2.1-0r1) UNRELEASED; urgency=low
   
   * New upstream release (Closes: #603063):
     - correctly parse CMake FILE command with GLOB or GLOB_RECURSE (Closes: #609674).
