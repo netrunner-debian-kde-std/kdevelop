@@ -18,6 +18,7 @@ kdevelop (4:4.2.1-0r1) UNRELEASED; urgency=low
     - add Replaces for all kdevelop-l10n-* packages
     - change Recommends to kdevplatform-l10n
   * Add build-dependency for okteta-dev.
+  * Add myself to Uploaders.
 
   [ Nicolás Alvarez ]
   * Add debian/watch file to track upstream versions.
