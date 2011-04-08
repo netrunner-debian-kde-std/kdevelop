@@ -15,8 +15,8 @@ Vcs-Git: git://git.debian.org/pkg-kde/kde-std/kdevelop.git
 
 Package: kdevelop
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, kdevelop-data (>= ${source:Version}),
- lcov
+Depends: ${misc:Depends}, ${shlibs:Depends},
+ kdevelop-data (>= ${source:Version})
 Recommends: gcc, g++, make, gdb (>= 7.0)
 Suggests: cmake, kapptemplate, kdevelop-l10n
 Description: integrated development environment for KDE
