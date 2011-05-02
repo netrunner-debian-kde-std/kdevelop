@@ -40,6 +40,9 @@ kdevelop (4:4.2.2-0r1) UNRELEASED; urgency=low
     - suggest kapptemplate
     - remove lcov, valgrind
 
+  [ Fathi Boudra ]
+  * Add libqtwebkit-dev build dependency (Closes: #618052).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 16:15:29 +0200
 
 kdevelop (4:4.0.1-1) unstable; urgency=low
