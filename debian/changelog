@@ -32,7 +32,7 @@ kdevelop (4:4.2.2-0r1) UNRELEASED; urgency=low
   * Change the Vcs-* fields in debian/control to point to git.
   * Disable the french localization package; not shipped in this release.
   * Update installed files.
-  * Bump Standards-Version to 3.9.1 (no changes needed).
+  * Bump Standards-Version to 3.9.2 (no changes needed).
 
   [ Pino Toscano ]
   * Modify depends, recommends and suggests for kdevelop:
