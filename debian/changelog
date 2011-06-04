@@ -1,7 +1,8 @@
-kdevelop (4:4.2.2-1) UNRELEASED; urgency=low
-  
+kdevelop (4:4.2.2-1) unstable; urgency=low
+
   * New upstream release (Closes: #603063):
-    - correctly parse CMake FILE command with GLOB or GLOB_RECURSE (Closes: #609674).
+    - correctly parse CMake FILE command with GLOB or GLOB_RECURSE.
+      (Closes: #609674)
 
   [ Andreas Cord-Landwehr ]
   * Bump build dependency kdevplatform-dev to version 1.2.0
@@ -22,7 +23,7 @@ kdevelop (4:4.2.2-1) UNRELEASED; urgency=low
 
   [ Nicolás Alvarez ]
   * Add debian/watch file to track upstream versions.
-  * Add kdevelop-dbg package with KDevelop debugging symbols (Closes: #593634).
+  * Add kdevelop-dbg package with KDevelop debugging symbols. (Closes: #593634)
 
   [ George Kiagiadakis ]
   * Add myself to uploaders.
@@ -36,14 +37,14 @@ kdevelop (4:4.2.2-1) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Modify depends, recommends and suggests for kdevelop:
-    - recommend gcc, g++, make (Closes: #597642)
+    - recommend gcc, g++, make. (Closes: #597642)
     - suggest kapptemplate
     - remove lcov, valgrind
 
   [ Fathi Boudra ]
-  * Add libqtwebkit-dev build dependency (Closes: #618052).
+  * Add libqtwebkit-dev build dependency. (Closes: #618052)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Nov 2010 16:15:29 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 02 Jun 2011 11:39:31 +0300
 
 kdevelop (4:4.0.1-1) unstable; urgency=low
 
