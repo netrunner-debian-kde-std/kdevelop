@@ -6,7 +6,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>,
  George Kiagiadakis <kiagiadakis.george@gmail.com>,
  Andreas Cord-Landwehr <cola@uni-paderborn.de>
 Build-Depends: cdbs, debhelper (>= 7.4.15), cmake, pkg-kde-tools (>= 0.9.0),
- kdevplatform-dev (>= 1.2.0), kdebase-workspace-dev (>= 4:4.5.2),
+ kdevplatform-dev (>= 1.2.0), kde-workspace-dev (>= 4:4.7.2),
  libqtwebkit-dev, shared-mime-info, okteta-dev
 Standards-Version: 3.9.2
 Homepage: http://www.kdevelop.org/

@@ -1,6 +1,7 @@
 kdevelop (4:4.2.3-0) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Change build dependency kdebase-workspace-dev to kde-workspace-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Jul 2011 10:22:32 +0200
 
