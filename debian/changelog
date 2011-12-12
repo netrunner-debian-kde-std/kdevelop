@@ -3,6 +3,9 @@ kdevelop (4:4.2.3-0) UNRELEASED; urgency=low
   [ Andreas Cord-Landwehr ]
   * New upstream release.
 
+  [ Pino Toscano ]
+  * Bump the kdevplatform-dev build dependency to 1.2.3.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Jul 2011 10:22:32 +0200
 
 kdevelop (4:4.2.2-1) unstable; urgency=low
