@@ -1,5 +1,10 @@
 kdevelop (4:4.2.3-2) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Detect whether the Okteta structure tool is compiled, and if it is not
+    do not use it in the Okteta plugin; this fixes compilation on architectures
+    with no structures tool, i.e. big endian ones.
+    (patch okteta_optional_structures_tool.diff)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 15 Mar 2012 13:21:17 +0100
 
