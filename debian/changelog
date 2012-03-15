@@ -1,12 +1,14 @@
-kdevelop (4:4.2.3-2) UNRELEASED; urgency=low
+kdevelop (4:4.2.3-2) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * Detect whether the Okteta structure tool is compiled, and if it is not
     do not use it in the Okteta plugin; this fixes compilation on architectures
     with no structures tool, i.e. big endian ones.
     (patch okteta_optional_structures_tool.diff)
+  * Set urgency=medium as it fixes a FTBFS, and to avoid blocking the KDE 4.7
+    transition too much.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 15 Mar 2012 13:21:17 +0100
+ -- Pino Toscano <pino@debian.org>  Thu, 15 Mar 2012 16:38:14 +0100
 
 kdevelop (4:4.2.3-1) unstable; urgency=low
 
