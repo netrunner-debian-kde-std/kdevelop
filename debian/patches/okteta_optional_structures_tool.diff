@@ -33,17 +33,21 @@ Forwarded: no
      KDevelop::IDocumentController* documentController = core()->documentController();
 --- a/utils/okteta/CMakeLists.txt
 +++ b/utils/okteta/CMakeLists.txt
-@@ -1,9 +1,13 @@
+@@ -1,5 +1,6 @@
  project( okteta )
  
 +find_file(KASTEN_STRUCTTOOL_H structtool.h PATHS ${LIBKASTEN_INCLUDE_DIR} NO_DEFAULT_PATH)
  
  include_directories( ${okteta_SOURCE_DIR} ${okteta_BINARY_DIR} )
  
- # add_definitions( -DKDE_DEFAULT_DEBUG_AREA=9038 )
+@@ -7,6 +8,10 @@
+     -DKASTEN_VERSION=${LIBKASTEN_VERSION}
+ )
+ 
 +if(NOT KASTEN_STRUCTTOOL_H)
 +    add_definitions(-DOKTETA_NO_STRUCTURES_TOOL)
 +endif()
- 
++
  include_directories(
-   ${LIBKASTEN_INCLUDE_DIR}
+   ${LIBKASTEN_INCLUDE_DIRS}
+   ${LIBOKTETA_INCLUDE_DIRS}
