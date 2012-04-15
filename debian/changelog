@@ -2,7 +2,7 @@ kdevelop (4:4.3.1-0r0) UNRELEASED; urgency=low
 
   [ Andreas Cord-Landwehr ]
   * New upstream release.
-  * Bump build dependency kdevplatform-dev to version 1.3.0
+  * Bump build dependency kdevplatform-dev to version 1.3.1
   * Update build dependency from kdebase-workspace-dev to kde-workspace-dev.
   * Update debian/copyright.
   * Update patch.
