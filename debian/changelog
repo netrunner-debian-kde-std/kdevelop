@@ -6,6 +6,7 @@ kdevelop (4:4.3.1-0r0) UNRELEASED; urgency=low
   * Update build dependency from kdebase-workspace-dev to kde-workspace-dev.
   * Update debian/copyright.
   * Update patch.
+  * Bump Standards-Version to 3.9.3, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Jan 2012 12:20:57 +0100
 
