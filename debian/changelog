@@ -1,9 +1,9 @@
-kdevelop (4:4.3.1-2) UNRELEASED; urgency=low
+kdevelop (4:4.3.1-2) unstable; urgency=low
 
-  [ Pino Toscano ]
+  * Team upload. Upload to unstable.
   * Slightly improve the description of kdevelop-l10n.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 20 May 2012 11:43:31 +0200
+ -- Pino Toscano <pino@debian.org>  Sun, 20 May 2012 11:46:44 +0200
 
 kdevelop (4:4.3.1-1) experimental; urgency=low
 
