@@ -85,6 +85,10 @@ Breaks: kdevelop-l10n-ca, kdevelop-l10n-cavalencia, kdevelop-l10n-da,
  kdevelop-l10n-ru, kdevelop-l10n-sl, kdevelop-l10n-sv, kdevelop-l10n-th,
  kdevelop-l10n-tr, kdevelop-l10n-uk, kdevelop-l10n-zhcn, kdevelop-l10n-zhtw
 Recommends: kdevplatform-l10n
-Description: Localization files for the KDevelop IDE
+Description: localization files for the KDevelop IDE
+ KDevelop is an easy to use integrated development environment for KDE.
+ It supports a wide range of programming languages and features project
+ management, an advanced editor, a class browser and an integrated debugger.
+ .
  This package contains the translations for KDevelop.
 
