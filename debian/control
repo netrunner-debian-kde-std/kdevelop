@@ -30,6 +30,8 @@ Description: integrated development environment for KDE
 Package: kdevelop-data
 Architecture: all
 Depends: ${misc:Depends}
+Breaks: kdevelop-doc (<< 4:4.3)
+Replaces: kdevelop-doc (<< 4:4.3)
 Description: data files for the KDevelop IDE
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
