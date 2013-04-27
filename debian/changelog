@@ -6,6 +6,10 @@ kdevelop (4:4.5.0-0r0) UNRELEASED; urgency=low
 
   [ Andreas Cord-Landwehr]
   * Bump build dependency for kdevplatform-dev to 1.5.0.
+  * Remove patch for compile switch for Okteta structure tool since
+    BIG_ENDIAN compile switch implemented by upstream
+    (remove patch okteta_optional_structures_tool.diff)
+
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 May 2012 23:56:49 +0200
 
