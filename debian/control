@@ -14,6 +14,7 @@ Build-Depends: cdbs,
                libqtwebkit-dev,
                okteta-dev,
                pkg-kde-tools (>= 0.9.0),
+               libqjson-dev,
                shared-mime-info
 Standards-Version: 3.9.3
 Homepage: http://www.kdevelop.org/

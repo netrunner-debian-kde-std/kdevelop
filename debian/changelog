@@ -9,7 +9,7 @@ kdevelop (4:4.5.0-0r0) UNRELEASED; urgency=low
   * Remove patch for compile switch for Okteta structure tool since
     BIG_ENDIAN compile switch implemented by upstream
     (remove patch okteta_optional_structures_tool.diff)
-
+  * Add libqjson-dev build dependency.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 May 2012 23:56:49 +0200
 
