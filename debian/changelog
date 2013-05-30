@@ -1,4 +1,4 @@
-kdevelop (4:4.5.0-0r0) UNRELEASED; urgency=low
+kdevelop (4:4.5.1-0r0) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Make kdevelop-data break/replace kdevelop-doc << 4.3 (it was part of
