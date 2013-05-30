@@ -12,6 +12,7 @@ kdevelop (4:4.5.1-0r0) UNRELEASED; urgency=low
   * Add libqjson-dev build dependency.
   * New upstream release:
     - fixes parsing of libc header files (Closes: #707215)
+  * Bump Standards-Version to 3.9.4: no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 25 May 2012 23:56:49 +0200
 
