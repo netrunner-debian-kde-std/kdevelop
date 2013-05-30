@@ -5,7 +5,7 @@ kdevelop (4:4.5.1-0r0) UNRELEASED; urgency=low
     kdevelop 3.5).
 
   [ Andreas Cord-Landwehr]
-  * Bump build dependency for kdevplatform-dev to 1.5.0.
+  * Bump build dependency for kdevplatform-dev to 1.5.1.
   * Remove patch for compile switch for Okteta structure tool since
     BIG_ENDIAN compile switch implemented by upstream
     (remove patch okteta_optional_structures_tool.diff)
