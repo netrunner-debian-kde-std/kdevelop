@@ -5,13 +5,12 @@ This work was packaged for Debian by:
     Norman Jordan <njordan@debian.org>
     Jeremy Lainé <sharky@debian.org>
     Fathi Boudra <fabo@debian.org>
+    Andreas Cord-Landwehr <cola@uni-paderborn.de>
 
 It was downloaded from:
-
-    http://www.kdevelop.org
+    http://download.kde.org
 
 Upstream Authors:
-
     Andreas Pakulat <apaku@gmx.de>
     Alexander Dymo <adymo@kdevelop.org>
     David Nolden <david.nolden.kdevelop@art-master.de>
@@ -46,186 +45,772 @@ Upstream Authors:
     Jens Dagerbo  <jens.dagerbo@swipnet.se>
     Robert Gruber <rgruber@users.sourceforge.net>
 
-Copyright:
 
-    Copyright (C) 1999-2010 The KDevelop developers
+Files: debuggers/gdb/stringhelpers.cpp
+ debuggers/gdb/stringhelpers.h
+ languages/cpp/codecompletion/context.cpp
+ languages/cpp/codecompletion/context.h
+ languages/cpp/codecompletion/missingincludeitem.cpp
+ languages/cpp/codecompletion/missingincludeitem.h
+ languages/cpp/codegen/adaptsignatureaction.cpp
+ languages/cpp/codegen/adaptsignatureaction.h
+ languages/cpp/codegen/codeassistant.cpp
+ languages/cpp/codegen/codeassistant.h
+ languages/cpp/codegen/signatureassistant.cpp
+ languages/cpp/codegen/signatureassistant.h
+ languages/cpp/codegen/unresolvedincludeassistant.cpp
+ languages/cpp/codegen/unresolvedincludeassistant.h
+ languages/cpp/cppduchain/builtinoperators.cpp
+ languages/cpp/cppduchain/builtinoperators.h
+ languages/cpp/cppduchain/cppduchain.cpp
+ languages/cpp/cppduchain/cppduchain.h
+ languages/cpp/cppduchain/cppducontext.cpp
+ languages/cpp/cppduchain/cppducontext.h
+ languages/cpp/cppduchain/expressionevaluationresult.cpp
+ languages/cpp/cppduchain/expressionevaluationresult.h
+ languages/cpp/cppduchain/expressionparser.cpp
+ languages/cpp/cppduchain/expressionparser.h
+ languages/cpp/cppduchain/expressionvisitor.cpp
+ languages/cpp/cppduchain/expressionvisitor.h
+ languages/cpp/cppduchain/missingdeclarationassistant.cpp
+ languages/cpp/cppduchain/missingdeclarationassistant.h
+ languages/cpp/cppduchain/missingdeclarationproblem.cpp
+ languages/cpp/cppduchain/missingdeclarationproblem.h
+ languages/cpp/cppduchain/missingdeclarationtype.cpp
+ languages/cpp/cppduchain/missingdeclarationtype.h
+ languages/cpp/cppduchain/navigation/*
+ languages/cpp/cppduchain/overloadresolution.cpp
+ languages/cpp/cppduchain/overloadresolution.h
+ languages/cpp/cppduchain/overloadresolutionhelper.cpp
+ languages/cpp/cppduchain/overloadresolutionhelper.h
+ languages/cpp/cppduchain/templatedeclaration.cpp
+ languages/cpp/cppduchain/templatedeclaration.h
+ languages/cpp/cppduchain/tests/test_expressionparser.cpp
+ languages/cpp/cppduchain/tests/test_expressionparser.h
+ languages/cpp/cppduchain/typeconversion.cpp
+ languages/cpp/cppduchain/typeconversion.h
+ languages/cpp/cppduchain/typeutils.cpp
+ languages/cpp/cppduchain/typeutils.h
+ languages/cpp/cppduchain/viablefunctions.cpp
+ languages/cpp/cppduchain/viablefunctions.h
+ languages/cpp/cpputils.cpp
+ languages/cpp/cpputils.h
+ languages/cpp/debugbuilders.h
+ languages/cpp/parser/commentformatter.cpp
+ languages/cpp/parser/commentformatter.h
+ languages/cpp/parser/commentparser.cpp
+ languages/cpp/parser/commentparser.h
+ languages/cpp/parser/rpp/macrorepository.cpp
+ languages/cpp/parser/rpp/macrorepository.h
+Copyright: 2007-2009 David Nolden <david.nolden.kdevelop@art-master.de>
+License: LGPL-2
 
-    © 2005-2009, 2011 David Nolden <david.nolden.kdevelop@art-master.de> <david.nolden@kdevelop.org> <david.nolden.kdevelop@kdevelop.org> <ender@debian.org>
-    © 2006-2008 Hamish Rodda <rodda@kde.org>
-    © 2006-2010 Aleix Pol <aleixpol@kde.org> <aleixpol@gmail.com>
-    © 2002-2006 Roberto Raggi <roberto@kdevelop.org>
-    © 2005-2008 Matt Rogers <mattr@kde.org>
-    © 2004, 2007-2011 Joëlle Cornavin <jcornavi@club-internet.fr> <j.cornavin@sfr.fr> <jcornavin@laposte.net> <jcornavi@kde-france.org> <joelle@bureau-cornavin.com> <jcorn@free.fr>
-    © 2006-2007, 2009-2010 Andreas Pakulat <apaku@gmx.de>
-    © 2003-2005, 2007-2008, 2010 Marta Rybczyńska <mrybczynsk@poczta.onet.pl> <mrybczynska@poczta.onet.pl> <kde-i18n@rybczynska.net>
-    © 2005-2009 Vladimir Prus <ghost@cs.msu.su>
-    © 2008-2011 Niko Sams <niko.sams@gmail.com>
-    © 1999-2001, 2003 John Birch <jbb@kdevelop.org>
-    © 2010 Benjamin Port <port.benjamin@gmail.com>
-    © 2009-2010 Manuel Tortosa <manutortosa@gmail.com>
-    © 2007, 2009-2012 Josep Ma. Ferrer <txemaq@gmail.com>
-    © 2004-2012 Stefan Asserhäll <stefan.asserhall@comhem.se>
-    © 2009-2012 Milian Wolff <mail@milianw.de>
-    © 2010-2011 Friedrich W. H. Kossebau <kossebau@kde.org>
-    © 1999-2000, 2002-2011 Free Software Foundation Inc.
-    © 2008-2009 Marce Villarino <mvillarino@users.sourceforge.net> <mvillarino@gmail.com>
-    © 2007-2008, 2010-2012 Franklin Weng <franklin@mail.everfocus.com.tw> <franklin@goodhorse.idv.tw>
-    © 2005-2006, 2008-2012 Marek Laane <bald@smail.ee> <bald@starman.ee>
-    © 2009-2012 Freek de Kruijf <freekdekruijf@kde.nl> <f.de.kruijf@gmail.com>
-    © 2008-2012 André Marcelo Alvarenga <andrealvarenga@gmx.net> <alvarenga@kde.org>
-    © 2006, 2008-2012 Manfred Wiese <m.j.wiese@web.de>
-    © 2005-2007 Adam Treat <treat@kde.org>
-    © 2008-2012 Yuri Chornoivan <yurchor@ukr.net>
-    © 2005, 2009-2012 Bjørn Steensrud <bjornst@skogkatt.homelinux.org>
-    © 2005-2012 Eloy Cuadra <ecuadra@eloihr.net>
-    © 2009-2012 Simone Solinas <ksolsim@gmail.com>
-    © 2006, 2008-2010 Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>
-    © 2008 Cédric Pasteur <cedric.pasteur@free.fr>
-    © 2010-2012 Martin Schlander <mschlander@opensuse.org>
-    © 2005-2006, 2011-2012 Lasse Liehu <lasse.liehu@gmail.com> <lliehu@kolumbus.fi>
-    © 2008-2012 Frederik Schwarzer <schwarzer@kde.org> <schwarzerf@gmail.com>
-    © 2011-2012 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
-    © 2008-2011 Ni Hui <shuizhuyuanluo@126.com>
-    © 2004-2005, 2009-2010 Andrew Coles <andrew_coles@yahoo.co.uk>
-    © 2010-2011 Canonical Ltd
-    © 2010-2012 Alexander Potashev <aspotashev@gmail.com>
-    © 2007 Dukju Ahn <dukjuahn@gmail.com>
-    © 2010-2011 FIRST <email@address>
-    © 2008-2010, 2012 Luiz Fernando Ranghetti <elchevive@opensuse.org>
-    © 2002-2004 Xiong Jiang <jxiong@offtopic.org>
-    © 2004-2006, 2009 Nick Shaforostoff <shaforostoff@kde.ru> <shafff@ukr.net>
-    © 2007-2009 mvillarino <mvillarino@users.sourceforge.net> <mvillarino@gmail.com>
-    © 2001 Qi Liang <cavendish@eyou.com>
-    © 2010-2012 Gerhard Stengel <gstengel@gmx.net>
-    © 2006-2009 Sönke Dibbern <s_dibbern@web.de>
-    © 2010 Morten Anton Bach Sjøgren <m_abs@mabs.dk>
-    © 2005 Funda Wang <fundawang@linux.net.cn>
-    © 2009 Ramón Zarazúa <killerfox512+kde@gmail.com>
-    ©  Anna Wojdeł <ania@kbs.twi.tudelft.nl>
-    © 2008-2009 Kristof Bal <kristof.bal@gmail.com>
-    © 2009, 2011 Jorma Karvonen <karvonen.jorma@gmail.com>
-    © 2001 Matthias Hölzer-Klüpfel <mhk@caldera.de>
-    © 2010 Yannick Motta <yannick.motta@gmail.com>
-    ©  Jacek Wojdeł <wojdel@kbs.twi.tudelft.nl>
-    © 2004-2005 Michal Rudolf <mrudolf@kdewebdev.org>
-    © 2005-2007 Krzysztof Lichota <lichota@mimuw.edu.pl>
-    © 2006-2009 Burkhard Lück <lueck@hube-lueck.de>
-    © 2008 Michał Smoczyk <msmoczyk@wp.pl>
-    © 1999-2002 Bernd Gehrmann <bernd@mail.berlios.de> <bernd@kdevelop.org>
-    © 2010 Gama <marcus.gama@gmail.com>
-    © 2010 Marcus Vinícius de Andrade
-    © 1998-2002 Tal Davidson
-    © 2003, 2010-2011 Marcus Gama <marcus.gama@gmail.com> <marcus_gama@uol.com.br>
-    © 2006-2010 Jim Pattee <jimp03@email.com>
-    © 2012 Xosé <xosecalvo@gmail.com>
-    © 2003-2009 Alexander Dymo <adymo@kdevelop.org> <cloudtemple@mskat.net>
-    © 2002-2006, 2009 Malcolm Hunter <malcolm.hunter@gmx.co.uk>
-    © 2005-2007, 2009 Thomas Reitelbach <tr@erdfunkstelle.de>
-    © 2004 Jaroslaw Staniek <js@iidea.pl>
-    © 2008-2009 Arndt Braun <arndtbraun@googlemail.com>
-    © 2011 Stelios <sstavra@gmail.com>
-    © 2007 Kris Wong <kris.p.wong@gmail.com>
-    © 2001-2002 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
-    © 2010 Jonathan Kolberg <bulldog98@kubuntu-de.org>
-    © 2012 Dimitrios Glentadakis <dglent@gmail.com>
-    © 2004-2006 Matthieu Robin <kde@macolu.org> <matthieu@macolu.org>
-    © 2011 Martin Heide <martin.heide@gmx.net>
-    © 2009 Bertjan Broeksema <b.broeksema@home.nl>
-    © 2003-2008 Giovanni Venturi <jumpyj@libero.it> <jumpyj@tiscali.it>
-    © 2002 John Firebaugh <jfirebaugh@kde.org>
-    © 2003 Teemu Rytilahti <teemu.rytilahti@d5k.net> <teemu.rytilahti@kde-fi.org>
-    © 2010 Patrick Spendrin <ps_ml@gmx.de>
-    © 2012 Xabier Villar <xabier.villar@gmail.com>
-    © 2005 Harald Fernengel <harry@kdevelop.org>
-    ©  Tobias Koenig <tokoe@kde.org>
-    © 2010 Ciprian Ciubotariu <cheepeero@gmx.net>
-    © 2010 Floris Ruijter <flo.ruijt@hotmail.com>
-    © 2001-2002, 2005 Juan Manuel García Molina <salgiza@jazzfree.com> <juanma@superiodico.net>
-    © 2008, 2011 Sébastien Renard <renard@kde.org> <sebastien.renard@digitalfox.org>
-    © 2004-2005 Tom Albers <tomalbers@kde.nl> <toma@kovoks.nl>
-    © 2008, 2011 Sebastian Kügler <sebas@kde.org>
-    © 2010 Panagiotis Papadopoulos <pano_90@gmx.net>
-    © 2002 Insight Consortium. All Rights Reserved.
-    © 2002-2005 Albert Astals Cid <astals11@terra.es>
-    © 2009 Dimitriy Ryazantcev <djm00n@mail.ru>
-    © 2010 Esben Mose <kde@mosehansen.dk>
-    © 2004 Wizard580 <wizard580@mail.primorye.ru> <wizardkde@yandex.ru>
-    © 2000-2007 Rinse de Vries <rinse@kde.nl> <rinsedevries@kde.nl>
-    © 2003, 2005-2007 Antoni Bella Pérez <antonibella5@orange.es>
-    © 2010 Olivier de Gaalon <olivier.jg@gmail.com>
-    © 2004-2007 Andrey Cherepanov <sibskull@mail.ru>
-    © 2005 Isaac Clerencia <isaac@warp.es>
-    © 2002-2006 Erik Kjær Pedersen <erik@binghamton.edu>
-    © 2003 Pedro Jurado Maqueda <pjmelenas@biwemail.com>
-    © 2006-2007, 2010 Jure Repinc <jlp@holodeck1.com>
-    © 2004 Tapio Mattila <tapio.mattila@kde-fi.org>
-    © 2009-2011 Marco Poletti <poletti.marco@gmail.com>
-    © 2004-2005 Rune Rønde Laursen <runerl@skjoldhoej.dk>
-    © 2002-2003 Gérard Delafond <gerard@delafond.org>
-    © 2007 Luigi Toscano <luigi.toscano@tiscali.it>
-    © 2010 Solinas Simone <ksolsim@gmail.com>
-    © 2010 Phuwanat Sakornsakolpat <narachai@gmail.com>
-    © 2002 Kitware Inc. Insight Consortium <kitware@kitware.com>
-    © 2010 Aracele Torres <araceletorres@gmail.com>
-    © 2008 Toussis Manolis <manolis@koppermind.homelinux.org>
-    © 2003-2005 Gregor Rakar <gregor.rakar@kiss.si>
-    © 2003 Luciano Montanaro <mikelima@cirulla.net>
-    © 2002-2004 Miguel Revilla Rodríguez <yo@miguelrevilla.com>
-    © 2005 Nicolas Ternisien <nicolast@libertysurf.fr>
-    © 2000-2002 Otto Bruggeman <otto.bruggeman@home.nl>
-    © 2008 Henrique Marks <henriquemarks@gmail.com>
-    © 2007-2008 Diniz Bortolotto <diniz.bortolotto@gmail.com>
-    © 2008 Goodhorse <franklin@goodhorse.idv.tw>
-    © 2003 Jonathan Riddell <kde-en-gb@jriddell.org>
-    © 2007 Ralf Habacker <ralf.habacker@freenet.de>
-    © 2008 CÃ©dric Pasteur <cedric.pasteur@free.fr>
-    © 2008 Rene Landert <rene.landert@bluewin.ch>
-    © 2003-2007 Jens Dagerbo <jens.dagerbo@swipnet.se>
-    © 2000-2003 Keld Simonsen <keld@dkuug.dk>
-    © 2003 Helio Chissini de Castro <helio@kde.org>
-    © 2003 Daniele Medri <madrid@linuxmeeting.net>
-    © 2000, 2002-2004 Peeter Russak <pezz@tkwcy.ee>
-    © 2001 Matteo Merli <merlim@libero.it>
-    © 2009 Yury G. Kudryashov <urkud.urkud@gmail.com>
-    © 2000 Rok Papež <rok@slo.net>
-    © 2004 Sergey V Turchin <zerg@altlinux.org>
-    © 2004 R.F. Pels <ruurd@tiscali.nl>
-    © 2004-2005 Bram Schoenmakers <bramschoenmakers@kde.nl>
-    © 2004-2005 Joëlle Conavin <jcornavi@kde-france.org>
-    ©  Sami Kuhmonen <sami@iqs.fi>
-    © 2008 Evgeniy Ivanov <powerfox@kde.ru>
-    © 2011 Alexey Morozov <morozov@gmail.com>
-    © 2010 I. Petrouchtchak <fr.ivan@ukrainian-orthodox.org>
-    © 2009 Luciano Pimentel <luciano.pimentel@kdemail.net>
-    © 2001 Salvador Gimeno <salgiza@jazzfree.com>
-    © 2003 Kim Enkovaara <kim.enkovaara@iki.fi>
-    © 2004-2005 Lisiane Sztoltz Teixeira <lisiane@kdemail.net>
-    © 2007 Nicola Ruggero <nicola@nxnt.org>
-    © 2005 Henrique Pinto <henrique.pinto@kdemail.net>
-    © 2009 Artem Sereda <overmind88@gmail.com>
-    © 2005 Ilpo Kantonen <ilpo@iki.fi>
-    © 2005, 2008 Jaime Robles <jaime@kde.org>
-    © 2002 Roman Maurer <roman.maurer@amis.net>
-    © 2003-2004 Thomas Diehl <thd@kde.org>
-    © 2003 Gilles CAULIER <caulier.gilles@free.fr>
-    © 2005 Gregory Mokhin <mok@kde.ru>
-    © 2003-2006 Stephan Johach <hunsum@gmx.de>
-    © 2005 Pablo de Vicente <p.devicente@wanadoo.es>
 
+Files: app/kdevideextension.cpp
+ app/kdevideextension.h
+ app/plasma/dataengine/kdevelopsessionsengine.cpp
+ app/plasma/dataengine/kdevelopsessionsengine.h
+ app/plasma/dataengine/kdevelopsessionsservice.cpp
+ app/plasma/dataengine/kdevelopsessionsservice.h
+ debuggers/gdb/debuggerplugin.cpp
+ debuggers/gdb/debuggerplugin.h
+ debuggers/gdb/debuggertracingdialog.cpp
+ debuggers/gdb/debuggertracingdialog.h
+ debuggers/gdb/debugjob.cpp
+ debuggers/gdb/debugjob.h
+ debuggers/gdb/debugsession.cpp
+ debuggers/gdb/debugsession.h
+ debuggers/gdb/disassemblewidget.cpp
+ debuggers/gdb/disassemblewidget.h
+ debuggers/gdb/gdb.cpp
+ debuggers/gdb/gdb.h
+ debuggers/gdb/gdbcommand.cpp
+ debuggers/gdb/gdbcommand.h
+ debuggers/gdb/gdbcommandqueue.cpp
+ debuggers/gdb/gdbcommandqueue.h
+ debuggers/gdb/gdbframestackmodel.cpp
+ debuggers/gdb/gdbframestackmodel.h
+ debuggers/gdb/gdbglobal.h
+ debuggers/gdb/gdblaunchconfig.cpp
+ debuggers/gdb/gdblaunchconfig.h
+ debuggers/gdb/gdboutputwidget.cpp
+ debuggers/gdb/gdboutputwidget.h
+ debuggers/gdb/gdbparser.cpp
+ debuggers/gdb/gdbparser.h
+ debuggers/gdb/gdbvariable.cpp
+ debuggers/gdb/gdbvariable.h
+ debuggers/gdb/memviewdlg.cpp
+ debuggers/gdb/memviewdlg.h
+ debuggers/gdb/printers/kde4.py
+ debuggers/gdb/printers/qt4.py
+ debuggers/gdb/processselection.cpp
+ debuggers/gdb/processselection.h
+ debuggers/gdb/selectcoredialog.cpp
+ debuggers/gdb/selectcoredialog.h
+ debuggers/gdb/stty.cpp
+ debuggers/gdb/stty.h
+ debuggers/gdb/variablecontroller.cpp
+ debuggers/gdb/variablecontroller.h
+ documentation/qthelp/testqthelp/*
+ formatters/astyle/astyle_formatter.cpp
+ formatters/astyle/astyle_plugin.cpp
+ formatters/astyle/astyle_plugin.h
+ formatters/astyle/astyle_preferences.cpp
+ formatters/astyle/astyle_preferences.h
+ formatters/astyle/astyle_stringiterator.cpp
+ formatters/astyle/astyle_stringiterator.h
+ formatters/customscript/*
+ languages/cpp/cppduchain/adlhelper.cpp
+ languages/cpp/cppduchain/adlhelper.h
+ languages/cpp/cppduchain/cpppreprocessenvironment.cpp
+ languages/cpp/cppduchain/cpppreprocessenvironment.h
+ languages/cpp/cppduchain/environmentmanager.cpp
+ languages/cpp/cppduchain/environmentmanager.h
+ languages/cpp/cppduchain/macroset.cpp
+ languages/cpp/cppduchain/macroset.h
+ languages/cpp/includepathresolver.h
+ projectbuilders/cmakebuilder/cmakebuilder.cpp
+ projectbuilders/cmakebuilder/cmakebuilder.h
+ projectbuilders/cmakebuilder/cmakebuilderpreferences.cpp
+ projectbuilders/cmakebuilder/cmakebuilderpreferences.h
+ projectbuilders/cmakebuilder/cmakejob.cpp
+ projectbuilders/cmakebuilder/cmakejob.h
+ projectbuilders/makebuilder/imakebuilder.h
+ projectbuilders/makebuilder/makebuilderpreferences.cpp
+ projectbuilders/makebuilder/makebuilderpreferences.h
+ projectmanagers/cmake/cmakebuilddirchooser.cpp
+ projectmanagers/cmake/cmakebuilddirchooser.h
+ projectmanagers/cmake/cmakecodecompletionmodel.cpp
+ projectmanagers/cmake/cmakecodecompletionmodel.h
+ projectmanagers/cmake/cmakedoc.h
+ projectmanagers/cmake/cmakedocumentation.cpp
+ projectmanagers/cmake/cmakedocumentation.h
+ projectmanagers/cmake/cmakehelpdocumentation.cpp
+ projectmanagers/cmake/cmakehelpdocumentation.h
+ projectmanagers/cmake/cmakemanager.cpp
+ projectmanagers/cmake/cmakemanager.h
+ projectmanagers/cmake/cmakemodelitems.cpp
+ projectmanagers/cmake/cmakemodelitems.h
+ projectmanagers/cmake/cmakenavigationwidget.cpp
+ projectmanagers/cmake/cmakenavigationwidget.h
+ projectmanagers/cmake/cmakeutils.cpp
+ projectmanagers/cmake/cmakeutils.h
+ projectmanagers/cmake/parser/astfactory.cpp
+ projectmanagers/cmake/parser/astfactory.h
+ projectmanagers/cmake/parser/cmakeast.cpp
+ projectmanagers/cmake/parser/cmakeast.h
+ projectmanagers/cmake/parser/cmakeastvisitor.h
+ projectmanagers/cmake/parser/cmakecachereader.cpp
+ projectmanagers/cmake/parser/cmakecachereader.h
+ projectmanagers/cmake/parser/cmakecondition.h
+ projectmanagers/cmake/parser/cmakeduchaintypes.cpp
+ projectmanagers/cmake/parser/cmakeduchaintypes.h
+ projectmanagers/cmake/parser/cmakelistsparser.cpp
+ projectmanagers/cmake/parser/cmakelistsparser.h
+ projectmanagers/cmake/parser/cmakeparserutils.cpp
+ projectmanagers/cmake/parser/cmakeparserutils.h
+ projectmanagers/cmake/parser/cmakeprojectvisitor.cpp
+ projectmanagers/cmake/parser/cmakeprojectvisitor.h
+ projectmanagers/cmake/parser/variablemap.cpp
+ projectmanagers/cmake/parser/variablemap.h
+ projectmanagers/cmake/settings/cmakecachedelegate.cpp
+ projectmanagers/cmake/settings/cmakecachedelegate.h
+ projectmanagers/cmake/settings/cmakecachemodel.cpp
+ projectmanagers/cmake/settings/cmakecachemodel.h
+ projectmanagers/cmake/settings/cmakepreferences.cpp
+ projectmanagers/cmake/settings/cmakepreferences.h
+ projectmanagers/cmake/testing/ctestfindjob.cpp
+ projectmanagers/cmake/testing/ctestfindjob.h
+ projectmanagers/cmake/testing/ctestrunjob.cpp
+ projectmanagers/cmake/testing/ctestrunjob.h
+ projectmanagers/cmake/testing/ctestsuite.cpp
+ projectmanagers/cmake/testing/ctestsuite.h
+ projectmanagers/cmake/testing/ctestutils.cpp
+ projectmanagers/cmake/testing/ctestutils.h
+ projectmanagers/cmake/testing/qttestdelegate.cpp
+ projectmanagers/cmake/testing/qttestdelegate.h
+ projectmanagers/cmake/tests/astfactorytest.cpp
+ projectmanagers/cmake/tests/astfactorytest.h
+ projectmanagers/cmake/tests/cmake_cmakecondition_test.cpp
+ projectmanagers/cmake/tests/cmake_cmakecondition_test.h
+ projectmanagers/cmake/tests/cmake_cmakeprojectvisitor_test.cpp
+ projectmanagers/cmake/tests/cmake_cmakeprojectvisitor_test.h
+ projectmanagers/cmake/tests/cmakeast_test.h
+ projectmanagers/cmake/tests/cmakecompliance.cpp
+ projectmanagers/cmake/tests/cmakecompliance.h
+ projectmanagers/cmake/tests/cmakeduchaintest.cpp
+ projectmanagers/cmake/tests/cmakeduchaintest.h
+ projectmanagers/cmake/tests/cmakeloadprojecttest.cpp
+ projectmanagers/cmake/tests/cmakeloadprojecttest.h
+ projectmanagers/cmake/tests/cmakeparsertest.cpp
+ projectmanagers/cmake/tests/cmakeparsertest.h
+ projectmanagers/cmake/tests/cmakeparserutilstest.cpp
+ projectmanagers/cmake/tests/cmakeparserutilstest.h
+ projectmanagers/cmake/tests/create_test.rb
+ projectmanagers/cmake/tests/ctestfindsuitestest.cpp
+ projectmanagers/cmake/tests/ctestfindsuitestest.h
+ projectmanagers/custom-buildsystem/configconstants.h
+ projectmanagers/custom-buildsystem/configwidget.cpp
+ projectmanagers/custom-buildsystem/configwidget.h
+ projectmanagers/custom-buildsystem/custombuildjob.cpp
+ projectmanagers/custom-buildsystem/custombuildjob.h
+ projectmanagers/custom-buildsystem/custombuildsystemconfig.h
+ projectmanagers/custom-buildsystem/custombuildsystemconfigwidget.cpp
+ projectmanagers/custom-buildsystem/custombuildsystemconfigwidget.h
+ projectmanagers/custom-buildsystem/custombuildsystemplugin.cpp
+ projectmanagers/custom-buildsystem/custombuildsystemplugin.h
+ projectmanagers/custom-buildsystem/debugarea.cpp
+ projectmanagers/custom-buildsystem/definesmodel.cpp
+ projectmanagers/custom-buildsystem/definesmodel.h
+ projectmanagers/custom-buildsystem/defineswidget.cpp
+ projectmanagers/custom-buildsystem/defineswidget.h
+ projectmanagers/custom-buildsystem/includesmodel.cpp
+ projectmanagers/custom-buildsystem/includesmodel.h
+ projectmanagers/custom-buildsystem/includeswidget.cpp
+ projectmanagers/custom-buildsystem/includeswidget.h
+ projectmanagers/custom-buildsystem/kcm_custombuildsystem.cpp
+ projectmanagers/custom-buildsystem/kcm_custombuildsystem.h
+ projectmanagers/custom-buildsystem/projectpathsmodel.cpp
+ projectmanagers/custom-buildsystem/projectpathsmodel.h
+ projectmanagers/custom-buildsystem/projectpathswidget.cpp
+ projectmanagers/custom-buildsystem/projectpathswidget.h
+ projectmanagers/custom-buildsystem/tests/*
+ projectmanagers/custommake/custommakemanager.cpp
+ projectmanagers/custommake/custommakemanager.h
+ projectmanagers/custommake/custommakemodelitems.cpp
+ projectmanagers/custommake/custommakemodelitems.h
+Copyright: 1999-2003 John Birch <jbb@kdevelop.org>
+ 2001 Bernd Gehrmann <bernd@kdevelop.org>
+ 2001 Matthias Hoelzer-Kluepfel <mhk@caldera.de>
+ 2002 Kitware Inc. Insight Consortium <kitware@kitware.com>
+ 2004 Alexander Dymo <adymo@kdevelop.org>
+ 2005-2009 Vladimir Prus <ghost@cs.msu.su>
+ 2006, 2011 David Nolden <david.nolden.kdevelop@art-master.de>
+ 2006-2008 Matt Rogers <mattr@kde.org>
+ 2006-2012 Aleix Pol Gonzalez <aleixpol@gmail.com>, <aleixpol@kde.org>
+ 2006-2012 Andreas Pakulat <apaku@gmx.de>
+ 2007 Dukju Ahn <dukjuahn@gmail.com>
+ 2007-2008 Hamish Rodda <rodda@kde.org>
+ 2008 Cédric Pasteur <cedric.pasteur@free.fr>
+ 2008 Manuel Breugelmans <mbr.nxi@gmail.com>
+ 2008 Montel Laurent <montel@kde.org>
+ 2009 Niko Sams <niko.sams@gmail.com>
+ 2009, 2011 Milian Wolff <mail@milianw.de>
+ 2010 Ciprian Ciubotariu <cheepeero@gmx.net>
+ 2010 Daniel Calviño Sánchez <danxuliu@gmail.com>
+ 2011 Shaun Reich <shaun.reich@kdemail.net>
+ 2012 Eike Hein <hein@kde.org>
+ 2012 Miha Čančula <miha@noughmad.eu>
+License: GPL-2+
+
+
+Files: utils/okteta/kastentoolviewwidget.cpp
+ utils/okteta/kastentoolviewwidget.h
+ utils/okteta/main.cpp
+ utils/okteta/oktetadocument.cpp
+ utils/okteta/oktetadocument.h
+ utils/okteta/oktetadocumentfactory.h
+ utils/okteta/oktetaglobal.h
+ utils/okteta/oktetaplugin.cpp
+ utils/okteta/oktetaplugin.h
+ utils/okteta/oktetatoolviewfactory.cpp
+ utils/okteta/oktetatoolviewfactory.h
+ utils/okteta/oktetaview.cpp
+ utils/okteta/oktetaview.h
+ utils/okteta/oktetawidget.cpp
+ utils/okteta/oktetawidget.h
+Copyright: 2010-2011 Friedrich W. H. Kossebau <kossebau@kde.org>
+License: LGPL-2.1+ or any later version approved by KDE e.V.
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) version 3, or any
+ later version accepted by the membership of KDE e.V. (or its
+ successor approved by the membership of KDE e.V.), which shall
+ act as a proxy defined in Section 6 of version 3 of the license.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library. If not, see <http://www.gnu.org/licenses/>.
+
+
+Files: app/welcomepage/*
+ debuggers/gdb/printers/tests/qtprinters.cpp
+ debuggers/gdb/printers/tests/qtprinters.h
+ debuggers/gdb/unittests/*
+ formatters/astyle/tests/*
+ kdeintegration/kdeprovider/kdeprojectsmodel.cpp
+ kdeintegration/kdeprovider/kdeprojectsmodel.h
+ kdeintegration/kdeprovider/kdeprojectsreader.cpp
+ kdeintegration/kdeprovider/kdeprojectsreader.h
+ kdeintegration/kdeprovider/tests/*
+ languages/cpp/codecompletion/implementationhelperitem.cpp
+ languages/cpp/codecompletion/implementationhelperitem.h
+ languages/cpp/codecompletion/missingincludemodel.cpp
+ languages/cpp/codecompletion/missingincludemodel.h
+ languages/cpp/codegen/ast/*
+ languages/cpp/codegen/cppduchainchangeset.cpp
+ languages/cpp/codegen/cppduchainchangeset.h
+ languages/cpp/codegen/makeimplementationprivate.cpp
+ languages/cpp/codegen/makeimplementationprivate.h
+ languages/cpp/codegen/renameaction.cpp
+ languages/cpp/codegen/renameaction.h
+ languages/cpp/codegen/renameassistant.cpp
+ languages/cpp/codegen/renameassistant.h
+ languages/cpp/codegen/renamefileaction.cpp
+ languages/cpp/codegen/renamefileaction.h
+ languages/cpp/cppduchain/contextbuilder.cpp
+ languages/cpp/cppduchain/contextbuilder.h
+ languages/cpp/cppduchain/controlflowgraphbuilder.cpp
+ languages/cpp/cppduchain/controlflowgraphbuilder.h
+ languages/cpp/cppduchain/cppduchainexport.h
+ languages/cpp/cppduchain/cppeditorintegrator.cpp
+ languages/cpp/cppduchain/cppeditorintegrator.h
+ languages/cpp/cppduchain/cpptypes.cpp
+ languages/cpp/cppduchain/cpptypes.h
+ languages/cpp/cppduchain/declarationbuilder.cpp
+ languages/cpp/cppduchain/declarationbuilder.h
+ languages/cpp/cppduchain/dumpchain.cpp
+ languages/cpp/cppduchain/dumpchain.h
+ languages/cpp/cppduchain/dumptypes.cpp
+ languages/cpp/cppduchain/dumptypes.h
+ languages/cpp/cppduchain/name_visitor.cpp
+ languages/cpp/cppduchain/name_visitor.h
+ languages/cpp/cppduchain/ptrtomembertype.cpp
+ languages/cpp/cppduchain/ptrtomembertype.h
+ languages/cpp/cppduchain/qpropertydeclaration.cpp
+ languages/cpp/cppduchain/qpropertydeclaration.h
+ languages/cpp/cppduchain/qtfunctiondeclaration.cpp
+ languages/cpp/cppduchain/qtfunctiondeclaration.h
+ languages/cpp/cppduchain/sourcemanipulation.cpp
+ languages/cpp/cppduchain/sourcemanipulation.h
+ languages/cpp/cppduchain/templateparameterdeclaration.cpp
+ languages/cpp/cppduchain/templateparameterdeclaration.h
+ languages/cpp/cppduchain/templateresolver.cpp
+ languages/cpp/cppduchain/templateresolver.h
+ languages/cpp/cppduchain/tests/codeanalysistest.cpp
+ languages/cpp/cppduchain/tests/codeanalysistest.h
+ languages/cpp/cppduchain/tests/test_duchain.cpp
+ languages/cpp/cppduchain/tests/test_duchain.h
+ languages/cpp/cppduchain/tests/test_duchain_cpp2011.cpp
+ languages/cpp/cppduchain/tests/test_sourcemanipulation.cpp
+ languages/cpp/cppduchain/tests/test_sourcemanipulation.h
+ languages/cpp/cppduchain/tests/testhelper.cpp
+ languages/cpp/cppduchain/tests/testhelper.h
+ languages/cpp/cppduchain/type_visitor.cpp
+ languages/cpp/cppduchain/type_visitor.h
+ languages/cpp/cppduchain/typebuilder.cpp
+ languages/cpp/cppduchain/typebuilder.h
+ languages/cpp/cppduchain/usebuilder.cpp
+ languages/cpp/cppduchain/usebuilder.h
+ languages/cpp/cppduchain/usedecoratorvisitor.cpp
+ languages/cpp/cppduchain/usedecoratorvisitor.h
+ languages/cpp/includepathcomputer.cpp
+ languages/cpp/includepathcomputer.h
+ languages/cpp/parser/ast.cpp
+ languages/cpp/parser/ast.h
+ languages/cpp/parser/astutilities.h
+ languages/cpp/parser/class_compiler.cpp
+ languages/cpp/parser/class_compiler.h
+ languages/cpp/parser/codegenerator.cpp
+ languages/cpp/parser/codegenerator.h
+ languages/cpp/parser/codemodel_fwd.h
+ languages/cpp/parser/control.cpp
+ languages/cpp/parser/control.h
+ languages/cpp/parser/cppparserexport.h
+ languages/cpp/parser/default_visitor.cpp
+ languages/cpp/parser/default_visitor.h
+ languages/cpp/parser/dumptree.cpp
+ languages/cpp/parser/dumptree.h
+ languages/cpp/parser/lexer.cpp
+ languages/cpp/parser/lexer.h
+ languages/cpp/parser/listnode.cpp
+ languages/cpp/parser/listnode.h
+ languages/cpp/parser/memorypool.cpp
+ languages/cpp/parser/memorypool.h
+ languages/cpp/parser/name_compiler.cpp
+ languages/cpp/parser/name_compiler.h
+ languages/cpp/parser/parentvisitor.cpp
+ languages/cpp/parser/parentvisitor.h
+ languages/cpp/parser/parser.cpp
+ languages/cpp/parser/parser.h
+ languages/cpp/parser/parsesession.cpp
+ languages/cpp/parser/parsesession.h
+ languages/cpp/parser/symbol.h
+ languages/cpp/parser/tests/test_parser.cpp
+ languages/cpp/parser/tests/test_parser.h
+ languages/cpp/parser/tests/test_parser_cpp2011.cpp
+ languages/cpp/parser/tokens.cpp
+ languages/cpp/parser/tokens.h
+ languages/cpp/parser/tool/*
+ languages/cpp/parser/type_compiler.cpp
+ languages/cpp/parser/type_compiler.h
+ languages/cpp/parser/visitor.cpp
+ languages/cpp/parser/visitor.h
+ languages/cpp/tests/cppjsontests.h
+ languages/cpp/tests/cpptestfiles/alljsontests.cpp
+ languages/cpp/tests/cpptestfiles/defaultparameters.cpp
+ languages/cpp/tests/cpptestfiles/functiondefinitiondeclarations.cpp
+ languages/cpp/tests/cpptestfiles/returnconst.cpp
+ languages/cpp/tests/cpptestfiles/va_arg.cpp
+ languages/cpp/tests/cpptestfiles/virtualspecifier.cpp
+ languages/cpp/tests/test_cppassistants.cpp
+ languages/cpp/tests/test_cppassistants.h
+ languages/cpp/tests/test_cppcodecompletion.cpp
+ languages/cpp/tests/test_cppcodecompletion.h
+ languages/cpp/tests/test_cppcodegen.cpp
+ languages/cpp/tests/test_cppcodegen.h
+ languages/cpp/tests/test_cppfiles.cpp
+ languages/cpp/tests/test_cppfiles.h
+ projectmanagers/cmake/cmakeexport.h
+ projectmanagers/cmake/parser/cmaketypes.h
+Copyright: 2002-2006 Roberto Raggi <roberto@kdevelop.org>
+ 2004 Jaroslaw Staniek <js@iidea.pl>
+ 2006 Adam Treat <treat@kde.org>
+ 2006 Matt Rogers <mattr@kde.org>
+ 2006-2008 Hamish Rodda <rodda@kde.org>
+ 2007-2009 David Nolden <david.nolden.kdevelop@art-master.de>, <david.nolden.kdevelop@kdevelop.org>
+ 2009 Bertjan Broeksema <b.broeksema@home.nl>
+ 2009 Ramon Zarazua <killerfox512+kde@gmail.com>
+ 2009 Ramón Zarazúa <killerfox512+kde@gmail.com>
+ 2009-2011 Aleix Pol Gonzalez <aleixpol@kde.org>
+ 2009-2012 Niko Sams <niko.sams@gmail.com>
+ 2010 Floris Ruijter <flo.ruijt@hotmail.com>
+ 2010 KDAB
+ 2010-2012 Olivier de Gaalon <olivier.jg@gmail.com>
+ 2010-2013 Milian Wolff <mail@milianw.de>
+License: LGPL-2
+
+
+Files: app/main.cpp
+ app/plasma/runner/kdevelopsessions.cpp
+ app/plasma/runner/kdevelopsessions.h
+ debuggers/gdb/breakpointcontroller.cpp
+ debuggers/gdb/breakpointcontroller.h
+ debuggers/gdb/mi/gdbmi.cpp
+ debuggers/gdb/mi/gdbmi.h
+ debuggers/gdb/mi/milexer.cpp
+ debuggers/gdb/mi/milexer.h
+ debuggers/gdb/mi/miparser.cpp
+ debuggers/gdb/mi/miparser.h
+ debuggers/gdb/mi/tokens.h
+ documentation/manpage/manpagedocumentation.cpp
+ documentation/manpage/manpagedocumentation.h
+ documentation/manpage/manpagedocumentationwidget.cpp
+ documentation/manpage/manpagedocumentationwidget.h
+ documentation/manpage/manpagemodel.cpp
+ documentation/manpage/manpagemodel.h
+ documentation/manpage/manpageplugin.cpp
+ documentation/manpage/manpageplugin.h
+ documentation/qthelp/qthelp_config_shared.cpp
+ documentation/qthelp/qthelp_config_shared.h
+ documentation/qthelp/qthelpconfig.cpp
+ documentation/qthelp/qthelpconfig.h
+ documentation/qthelp/qthelpdocumentation.cpp
+ documentation/qthelp/qthelpdocumentation.h
+ documentation/qthelp/qthelpnetwork.h
+ documentation/qthelp/qthelpplugin.cpp
+ documentation/qthelp/qthelpplugin.h
+ documentation/qthelp/qthelpprovider.cpp
+ documentation/qthelp/qthelpprovider.h
+ documentation/qthelp/qthelpproviderabstract.cpp
+ documentation/qthelp/qthelpproviderabstract.h
+ documentation/qthelp/qthelpqtdoc.cpp
+ documentation/qthelp/qthelpqtdoc.h
+ documentation/qthelp/tests/*
+ kdeintegration/executeplasmoid/executeplasmoidplugin.cpp
+ kdeintegration/executeplasmoid/executeplasmoidplugin.h
+ kdeintegration/executeplasmoid/plasmoidexecutionconfig.cpp
+ kdeintegration/executeplasmoid/plasmoidexecutionconfig.h
+ kdeintegration/executeplasmoid/plasmoidexecutionjob.cpp
+ kdeintegration/executeplasmoid/plasmoidexecutionjob.h
+ kdeintegration/kdeprovider/kdeproviderplugin.cpp
+ kdeintegration/kdeprovider/kdeproviderplugin.h
+ kdeintegration/kdeprovider/kdeproviderwidget.cpp
+ kdeintegration/kdeprovider/kdeproviderwidget.h
+ languages/cpp/codecompletion/helpers.cpp
+ languages/cpp/codecompletion/helpers.h
+ languages/cpp/codecompletion/item.cpp
+ languages/cpp/codecompletion/item.h
+ languages/cpp/codecompletion/model.cpp
+ languages/cpp/codecompletion/model.h
+ languages/cpp/codecompletion/worker.cpp
+ languages/cpp/codecompletion/worker.h
+ languages/cpp/codedelegate.cpp
+ languages/cpp/codedelegate.h
+ languages/cpp/codegen/cppclasshelper.cpp
+ languages/cpp/codegen/cppclasshelper.h
+ languages/cpp/codegen/progressdialogs.cpp
+ languages/cpp/codegen/progressdialogs.h
+ languages/cpp/codegen/simplerefactoring.cpp
+ languages/cpp/codegen/simplerefactoring.h
+ languages/cpp/codeproxy.cpp
+ languages/cpp/codeproxy.h
+ languages/cpp/cpphighlighting.cpp
+ languages/cpp/cpphighlighting.h
+ languages/cpp/cpplanguagesupport.cpp
+ languages/cpp/cpplanguagesupport.h
+ languages/cpp/cppparsejob.cpp
+ languages/cpp/cppparsejob.h
+ languages/cpp/includepathresolver.cpp
+ languages/cpp/msvcdefinehelper.cpp
+ languages/cpp/preprocessjob.cpp
+ languages/cpp/preprocessjob.h
+ languages/cpp/quickopen.cpp
+ languages/cpp/quickopen.h
+ languages/cpp/setuphelpers.cpp
+ languages/cpp/setuphelpers.h
+ languages/cpp/setuphelpers_gcc.cpp
+ languages/cpp/setuphelpers_msvc.cpp
+ languages/cpp/tests/cpp-parser.cpp
+ languages/cpp/tests/test_buddies.cpp
+ languages/cpp/tests/test_buddies.h
+ languages/cpp/tests/test_specialcompletion.cpp
+ languages/cpp/tests/test_specialcompletion.h
+ projectbuilders/makebuilder/makebuilder.cpp
+ projectbuilders/makebuilder/makebuilder.h
+ projectbuilders/makebuilder/makejob.cpp
+ projectbuilders/makebuilder/makejob.h
+ projectmanagers/cmake/icmakedocumentation.h
+ projectmanagers/cmake/icmakemanager.h
+ projectmanagers/cmake/parser/cmakedebugvisitor.cpp
+ projectmanagers/cmake/parser/cmakedebugvisitor.h
+ projectmanagers/cmake/tests/cmakemanagertest.cpp
+ projectmanagers/cmake/tests/cmakemanagertest.h
+ projectmanagers/cmake/tests/testhelpers.h
+Copyright: 2001-2002 Bernd Gehrmann <bernd@mail.berlios.de>
+ 2001-2002 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+ 2002 John Firebaugh <jfirebaugh@kde.org>
+ 2003-2004 Roberto Raggi <roberto@kdevelop.org>
+ 2003-2007 Jens Dagerbo <jens.dagerbo@swipnet.se>
+ 2003-2009 Alexander Dymo <adymo@kdevelop.org>
+ 2005-2007 Adam Treat <treat@kde.org>
+ 2005-2007 Matt Rogers <mattr@kde.org>
+ 2005-2008 Vladimir Prus <ghost@cs.msu.su>
+ 2006-2008 Hamish Rodda <rodda@kde.org>
+ 2007 Dukju Ahn <dukjuahn@gmail.com>
+ 2007 Kris Wong <kris.p.wong@gmail.com>
+ 2007 Ralf Habacker <Ralf.Habacker@freenet.de>
+ 2007, 2009 Andreas Pakulat <apaku@gmx.de>
+ 2007-2009 David Nolden <david.nolden.kdevelop@art-master.de>
+ 2008-2011 Sebastian Kügler <sebas@kde.org>
+ 2009-2010 Niko Sams <niko.sams@gmail.com>
+ 2009-2012 Aleix Pol Gonzalez <aleixpol@kde.org>
+ 2009-2012 Milian Wolff <mail@milianw.de>
+ 2010 Benjamin Port <port.benjamin@gmail.com>
+ 2010 Esben Mose Hansen <kde@mosehansen.dk>
+ 2010 Patrick Spendrin <ps_ml@gmx.de>
+ 2010 Yannick Motta <yannick.motta@gmail.com>
+ 2011 Martin Heide <martin.heide@gmx.net>
+ 2012 Ivan Shapovalov <intelfx100@gmail.com>
+ 2012 Miha Čančula <miha@noughmad.eu>
+License: LGPL-2+
+
+
+Files: app/plasma/applet/*
+ app_templates/cpp/CMake/cmake_plaincpp/*
+ app_templates/cpp/CMake/cmake_qt4core/*
+ app_templates/cpp/CMake/cmake_qt4core_qtest/*
+ app_templates/cpp/CMake/cmake_qt4core_qtest/tests/*
+ app_templates/cpp/CMake/cmake_qt4gui/*
+ debuggers/gdb/printers/tests/qbytearray.cpp
+ debuggers/gdb/printers/tests/qchar.cpp
+ debuggers/gdb/printers/tests/qdate.cpp
+ debuggers/gdb/printers/tests/qdatetime.cpp
+ debuggers/gdb/printers/tests/qhashint.cpp
+ debuggers/gdb/printers/tests/qhashstring.cpp
+ debuggers/gdb/printers/tests/qlistcontainer.cpp
+ debuggers/gdb/printers/tests/qmapint.cpp
+ debuggers/gdb/printers/tests/qmapstring.cpp
+ debuggers/gdb/printers/tests/qmapstringbool.cpp
+ debuggers/gdb/printers/tests/qsetint.cpp
+ debuggers/gdb/printers/tests/qsetstring.cpp
+ debuggers/gdb/printers/tests/qstring.cpp
+ debuggers/gdb/printers/tests/qtime.cpp
+ debuggers/gdb/printers/tests/qurl.cpp
+ debuggers/gdb/printers/tests/quuid.cpp
+ debuggers/gdb/tests/breakpoints/*
+ debuggers/gdb/tests/dll/*
+ debuggers/gdb/tests/infinite_loop/*
+ debuggers/gdb/tests/print_pointers/*
+ debuggers/gdb/tests/segfault/*
+ debuggers/gdb/tests/threads/*
+ debuggers/gdb/tests/tracing/*
+ debuggers/gdb/tests/two_module/*
+ debuggers/gdb/tests/two_module/src/*
+ file_templates/classes/c_gobject/*
+ file_templates/classes/c_gobject_private/*
+ file_templates/classes/c_gobject_properties/*
+ file_templates/classes/cpp_basic/*
+ file_templates/classes/private_pointer/*
+ file_templates/classes/python_basic/*
+ file_templates/classes/qobject/*
+ file_templates/classes/qt_shared/*
+ file_templates/classes/qt_widget/*
+ file_templates/common/*
+ file_templates/testing/cpp_qtestlib/*
+ file_templates/testing/cpp_qtestlib_kde/*
+ file_templates/testing/cpp_qtestlib_kdevelop/*
+ file_templates/testing/php_phpunit/*
+ file_templates/testing/python_pyunit/*
+ languages/cpp/examples/*
+ languages/cpp/parser/rpp/test/*
+ languages/cpp/parser/tests/test_generator.cpp
+ languages/cpp/parser/tests/test_pool.cpp
+ languages/cpp/parser/tests/test_pool.h
+ languages/cpp/tests/cppcodegen_snippets.cpp
+ projectmanagers/cmake/cmakeprojectdata.h
+ projectmanagers/cmake/parser/cmListFileLexer.c
+ projectmanagers/cmake/tests/cmakeast_test.cpp
+ projectmanagers/cmake/tests/manual/conditions_in_subdirectory_based_on_root_variables/*
+ projectmanagers/cmake/tests/manual/conditions_in_subdirectory_based_on_root_variables/subdirectory/*
+ projectmanagers/cmake/tests/manual/kde4app/kde4app.cpp
+ projectmanagers/cmake/tests/manual/kde4app/kde4app.h
+ projectmanagers/cmake/tests/manual/kde4app/kde4appview.cpp
+ projectmanagers/cmake/tests/manual/kde4app/kde4appview.h
+ projectmanagers/cmake/tests/manual/kde4app/main.cpp
+ projectmanagers/cmake/tests/manual/qt4app/*
+ projectmanagers/cmake/tests/manual/relative_paths/src/*
+ projectmanagers/cmake/tests/manual/single_subdirectory/subdir/*
+ projectmanagers/cmake/tests/manual/target_includes/*
+ projectmanagers/cmake/tests/manual/target_includes/includes/*
+ projectmanagers/cmake/tests/manual/tiny_project/*
+ projectmanagers/cmake/tests/manual/unit_tests/*
+ projectmanagers/cmake/tests/manual/unit_tests_kde/*
+ projectmanagers/cmake/tests/manual/with_build_dir/*
+ projectmanagers/custom-buildsystem/tests/projects/multipathproject/*
+ projectmanagers/custom-buildsystem/tests/projects/multipathproject/src/*
+ projectmanagers/custom-buildsystem/tests/projects/simpleproject/*
+ projectmanagers/custom-buildsystem/tests/projects/simpleproject/src/*
+Copyright: No copyright holders stated
+Comment: No license stated, hence the default license in COPYING applies
+License: GPL-2
+
+
+Files: languages/cpp/cppduchain/tests/testenvironment.cpp
+ languages/cpp/cppduchain/tests/testenvironment.h
+Copyright: 2013 Milian Wolff <mail@milianw.de>
+License: GPL-2+ or any later version approved by KDE e.V.
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License or (at your option) version 3 or any later version
+ accepted by the membership of KDE e.V. (or its successor approved
+ by the membership of KDE e.V.), which shall act as a proxy
+ defined in Section 14 of version 3 of the license.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Files: languages/cpp/parser/headergen/*
+ languages/cpp/parser/include/*
+ languages/cpp/parser/rpp/anchor.h
+ languages/cpp/parser/rpp/chartools.cpp
+ languages/cpp/parser/rpp/chartools.h
+ languages/cpp/parser/rpp/pp-engine.cpp
+ languages/cpp/parser/rpp/pp-engine.h
+ languages/cpp/parser/rpp/pp-environment.cpp
+ languages/cpp/parser/rpp/pp-environment.h
+ languages/cpp/parser/rpp/pp-internal.cpp
+ languages/cpp/parser/rpp/pp-internal.h
+ languages/cpp/parser/rpp/pp-location.cpp
+ languages/cpp/parser/rpp/pp-location.h
+ languages/cpp/parser/rpp/pp-macro-expander.cpp
+ languages/cpp/parser/rpp/pp-macro-expander.h
+ languages/cpp/parser/rpp/pp-macro.cpp
+ languages/cpp/parser/rpp/pp-macro.h
+ languages/cpp/parser/rpp/pp-scanner.cpp
+ languages/cpp/parser/rpp/pp-scanner.h
+ languages/cpp/parser/rpp/pp-stream.cpp
+ languages/cpp/parser/rpp/pp-stream.h
+ languages/cpp/parser/rpp/preprocessor.cpp
+ languages/cpp/parser/rpp/preprocessor.h
+ languages/cpp/parser/rpp/tests/*
+Copyright: 2005 Harald Fernengel <harry@kdevelop.org>
+ 2005 Roberto Raggi <roberto@kdevelop.org>
+ 2006-2007 Hamish Rodda <rodda@kde.org>
+ 2007-2009 David Nolden <david.nolden.kdevelop@art-master.de>
 License:
+  Permission to use, copy, modify, distribute, and sell this software and its
+  documentation for any purpose is hereby granted without fee, provided that
+  the above copyright notice appear in all copies and that both that
+  copyright notice and this permission notice appear in supporting
+  documentation.
 
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
 
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+  KDEVELOP TEAM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+  AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
+
+Files: debuggers/gdb/printers/libstdcxx.py
+Copyright: 2008-2011 Free Software Foundation Inc
+License: GPL-3+
+
+
+Files: formatters/astyle/lib/*
+Copyright: 2006-2011 Jim Pattee <jimp03@email.com>
+ 1998-2002 Tal Davidson
+License: LGPL-3+
+
+
+Files: projectmanagers/cmake/parser/cmakecondition.cpp
+Copyright: 2007-2008 Aleix Pol <aleixpol@gmail.com>
+License: GPL
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA.
+
+
+Files: projectmanagers/cmake/parser/cmListFileLexer.h
+Copyright: 2002 Kitware Inc. Insight Consortium.
+License: CMake-License
+ Copyright 2002 Kitware, Inc., Insight Consortium.  All rights reserved.
+  
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ * Neither the names of Kitware, Inc., the Insight Software Consortium, nor the
+   names of their contributors may be used to endorse or promote products
+   derived from this software without specific prior written  permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
 
 On Debian systems, the complete text of the GNU General
 Public License version 2 and version 3 can be found in
@@ -238,9 +823,9 @@ The Debian packaging is:
     Copyright (C) 2001-2005 Norman Jordan <njordan@debian.org>
     Copyright (C) 1999-2001 Ivan E. Moore II <rkrusty@debian.org>
     Copyright (C) 1999-2000 Bernd Gehrmann <bernd@physik.hu-berlin.de>
+    Copyright (C) 2012-2013 Andreas Cord-Landwehr <cola@uni-paderborn.de>
 
 you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
 (at your option) any later version.
-
