@@ -1,0 +1,19 @@
+Author: Andreas Cord-Landwehr <cola@uni-paderborn.de>
+Description: Add missing compile switch for including header files that
+ are only compiled on little endian.
+Last-Update: 2012-03-15
+Forwarded: no
+
+--- a/utils/okteta/oktetaplugin.cpp
++++ b/utils/okteta/oktetaplugin.cpp
+@@ -43,8 +43,10 @@
+ #include <bytetabletoolfactory.h>
+ #include <bookmarkstoolviewfactory.h>
+ #include <bookmarkstoolfactory.h>
++#ifndef BIG_ENDIAN 
+ #include <structurestoolviewfactory.h>
+ #include <structurestoolfactory.h>
++#endif
+ // Okteta Kasten
+ #if KASTEN_VERSION == 2
+ #include <bytearrayviewprofilemanager.h>
