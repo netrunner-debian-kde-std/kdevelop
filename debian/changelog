@@ -2,7 +2,7 @@ kdevelop (4:4.5.1-2) UNRELEASED; urgency=low
 
   [ Andreas Cord-Landwehr ]
   * Fix build on big endian platforms.
-  * Release fixes parser crashes: (Closes: #721968)
+  * Release fixes parser crashes: (Closes: #721968, #719284)
 
   [ Pino Toscano ]
   * Bump the okteta-dev build dependency to > 4.10, as previous versions are
