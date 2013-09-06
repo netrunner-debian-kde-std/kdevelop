@@ -7,6 +7,7 @@ kdevelop (4:4.5.1-2) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Bump the okteta-dev build dependency to > 4.10, as previous versions are
     not recognized. (Closes: #718076)
+  * Fix Vcs-* headers.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 16 Jul 2013 22:54:19 +0200
 
