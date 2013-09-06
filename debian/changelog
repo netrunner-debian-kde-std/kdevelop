@@ -1,4 +1,6 @@
-kdevelop (4:4.5.1-2) UNRELEASED; urgency=low
+kdevelop (4:4.5.1-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
 
   [ Andreas Cord-Landwehr ]
   * Fix build on big endian platforms.
@@ -9,7 +11,7 @@ kdevelop (4:4.5.1-2) UNRELEASED; urgency=low
     not recognized. (Closes: #718076)
   * Fix Vcs-* headers.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 16 Jul 2013 22:54:19 +0200
+ -- Pino Toscano <pino@debian.org>  Fri, 06 Sep 2013 19:46:51 +0200
 
 kdevelop (4:4.5.1-1) experimental; urgency=low
 
