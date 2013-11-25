@@ -2,6 +2,9 @@ kdevelop (4:4.5.2-0) UNRELEASED; urgency=low
 
   * New upstream release.
 
+  [ Andreas Cord-Landwehr ]
+  * Remove patch okteta_optional_structures_tool.diff, applied upstream.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 25 Nov 2013 16:41:42 +0100
 
 kdevelop (4:4.5.1-2) unstable; urgency=low
