@@ -5,6 +5,7 @@ kdevelop (4:4.5.2-0) UNRELEASED; urgency=low
   [ Andreas Cord-Landwehr ]
   * Remove patch okteta_optional_structures_tool.diff, applied upstream.
   * Bump build dependency for kdevplatform-dev to 1.5.2.
+  * Bump Standards-Version to 3.9.5: no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 25 Nov 2013 16:41:42 +0100
 
