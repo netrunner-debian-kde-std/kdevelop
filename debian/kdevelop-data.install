@@ -1,14 +1,7 @@
 usr/share/doc/*
 usr/share/icons/*
 usr/share/kde4/apps/kdevappwizard/*
-usr/share/kde4/apps/kdevcmakebuilder/*
-usr/share/kde4/apps/kdevcmakemanager/*
-usr/share/kde4/apps/kdevcodegen/templates/class_declaration_cpp.txt
-usr/share/kde4/apps/kdevcodegen/templates/cpp_header.h
-usr/share/kde4/apps/kdevcodegen/templates/cpp_header_onlyfunctions.h
-usr/share/kde4/apps/kdevcodegen/templates/cpp_implementation.cpp
-usr/share/kde4/apps/kdevcodegen/templates/method_declaration_cpp.txt
-usr/share/kde4/apps/kdevcodegen/templates/method_definition_cpp.txt
+usr/share/kde4/apps/kdevcodegen/
 usr/share/kde4/apps/kdevcppsupport/*
 usr/share/kde4/apps/kdevcustommakemanager/*
 usr/share/kde4/apps/kdevelop/*
