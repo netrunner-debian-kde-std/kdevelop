@@ -141,10 +141,25 @@ Files: app/kdevideextension.cpp
  debuggers/gdb/gdbvariable.h
  debuggers/gdb/memviewdlg.cpp
  debuggers/gdb/memviewdlg.h
+ debuggers/gdb/printers/helper.py
  debuggers/gdb/printers/kde4.py
  debuggers/gdb/printers/qt4.py
  debuggers/gdb/processselection.cpp
  debuggers/gdb/processselection.h
+ debuggers/gdb/registers/converters.cpp
+ debuggers/gdb/registers/converters.h
+ debuggers/gdb/registers/modelsmanager.cpp
+ debuggers/gdb/registers/modelsmanager.h
+ debuggers/gdb/registers/registercontroller.cpp
+ debuggers/gdb/registers/registercontroller.h
+ debuggers/gdb/registers/registercontroller_arm.cpp
+ debuggers/gdb/registers/registercontroller_arm.h
+ debuggers/gdb/registers/registercontroller_x86.cpp
+ debuggers/gdb/registers/registercontroller_x86.h
+ debuggers/gdb/registers/registersmanager.cpp
+ debuggers/gdb/registers/registersmanager.h
+ debuggers/gdb/registers/registersview.cpp
+ debuggers/gdb/registers/registersview.h
  debuggers/gdb/selectcoredialog.cpp
  debuggers/gdb/selectcoredialog.h
  debuggers/gdb/stty.cpp
@@ -175,16 +190,26 @@ Files: app/kdevideextension.cpp
  projectbuilders/cmakebuilder/cmakebuilderpreferences.h
  projectbuilders/cmakebuilder/cmakejob.cpp
  projectbuilders/cmakebuilder/cmakejob.h
+ projectbuilders/cmakebuilder/prunejob.cpp
+ projectbuilders/cmakebuilder/prunejob.h
  projectbuilders/makebuilder/imakebuilder.h
  projectbuilders/makebuilder/makebuilderpreferences.cpp
  projectbuilders/makebuilder/makebuilderpreferences.h
+ projectbuilders/ninjabuilder/ninjabuilderpreferences.cpp
+ projectbuilders/ninjabuilder/ninjabuilderpreferences.h
  projectmanagers/cmake/cmakebuilddirchooser.cpp
  projectmanagers/cmake/cmakebuilddirchooser.h
  projectmanagers/cmake/cmakecodecompletionmodel.cpp
  projectmanagers/cmake/cmakecodecompletionmodel.h
+ projectmanagers/cmake/cmakecommitchangesjob.cpp
+ projectmanagers/cmake/cmakecommitchangesjob.h
  projectmanagers/cmake/cmakedoc.h
  projectmanagers/cmake/cmakedocumentation.cpp
  projectmanagers/cmake/cmakedocumentation.h
+ projectmanagers/cmake/cmakeedit.cpp
+ projectmanagers/cmake/cmakeedit.h
+ projectmanagers/cmake/cmakeimportjob.cpp
+ projectmanagers/cmake/cmakeimportjob.h
  projectmanagers/cmake/cmakehelpdocumentation.cpp
  projectmanagers/cmake/cmakehelpdocumentation.h
  projectmanagers/cmake/cmakemanager.cpp
@@ -211,6 +236,8 @@ Files: app/kdevideextension.cpp
  projectmanagers/cmake/parser/cmakeparserutils.h
  projectmanagers/cmake/parser/cmakeprojectvisitor.cpp
  projectmanagers/cmake/parser/cmakeprojectvisitor.h
+ projectmanagers/cmake/parser/generationexpressionsolver.cpp
+ projectmanagers/cmake/parser/generationexpressionsolver.h
  projectmanagers/cmake/parser/variablemap.cpp
  projectmanagers/cmake/parser/variablemap.h
  projectmanagers/cmake/settings/cmakecachedelegate.cpp
@@ -229,15 +256,13 @@ Files: app/kdevideextension.cpp
  projectmanagers/cmake/testing/ctestutils.h
  projectmanagers/cmake/testing/qttestdelegate.cpp
  projectmanagers/cmake/testing/qttestdelegate.h
- projectmanagers/cmake/tests/astfactorytest.cpp
- projectmanagers/cmake/tests/astfactorytest.h
- projectmanagers/cmake/tests/cmake_cmakecondition_test.cpp
- projectmanagers/cmake/tests/cmake_cmakecondition_test.h
- projectmanagers/cmake/tests/cmake_cmakeprojectvisitor_test.cpp
- projectmanagers/cmake/tests/cmake_cmakeprojectvisitor_test.h
- projectmanagers/cmake/tests/cmakeast_test.h
+ projectmanagers/cmake/tests/cmakeastfactorytest.cpp
+ projectmanagers/cmake/tests/cmakeastfactorytest.h
+ projectmanagers/cmake/tests/cmakeasttest.h
  projectmanagers/cmake/tests/cmakecompliance.cpp
  projectmanagers/cmake/tests/cmakecompliance.h
+ projectmanagers/cmake/tests/cmakecmakeconditiontest.cpp
+ projectmanagers/cmake/tests/cmakecmakeconditiontest.h
  projectmanagers/cmake/tests/cmakeduchaintest.cpp
  projectmanagers/cmake/tests/cmakeduchaintest.h
  projectmanagers/cmake/tests/cmakeloadprojecttest.cpp
@@ -246,9 +271,15 @@ Files: app/kdevideextension.cpp
  projectmanagers/cmake/tests/cmakeparsertest.h
  projectmanagers/cmake/tests/cmakeparserutilstest.cpp
  projectmanagers/cmake/tests/cmakeparserutilstest.h
+ projectmanagers/cmake/tests/cmakeprojectvisitortest.cpp
+ projectmanagers/cmake/tests/cmakeprojectvisitortest.h
  projectmanagers/cmake/tests/create_test.rb
  projectmanagers/cmake/tests/ctestfindsuitestest.cpp
  projectmanagers/cmake/tests/ctestfindsuitestest.h
+ projectmanagers/cmake/tests/generationexpressionsolvertest.cpp
+ projectmanagers/cmake/tests/generationexpressionsolvertest.h
+ projectmanagers/cmake/tests/kdevprojectopen.cpp
+ projectmanagers/cmake/tests/kdevprojectopen.h
  projectmanagers/custom-buildsystem/configconstants.h
  projectmanagers/custom-buildsystem/configwidget.cpp
  projectmanagers/custom-buildsystem/configwidget.h
@@ -279,6 +310,20 @@ Files: app/kdevideextension.cpp
  projectmanagers/custommake/custommakemanager.h
  projectmanagers/custommake/custommakemodelitems.cpp
  projectmanagers/custommake/custommakemodelitems.h
+ providers/ghprovider/ghaccount.cpp
+ providers/ghprovider/ghaccount.h
+ providers/ghprovider/ghdialog.cpp
+ providers/ghprovider/ghdialog.h
+ providers/ghprovider/ghlineedit.cpp
+ providers/ghprovider/ghlineedit.h
+ providers/ghprovider/ghprovidermodel.cpp
+ providers/ghprovider/ghprovidermodel.h
+ providers/ghprovider/ghproviderplugin.cpp
+ providers/ghprovider/ghproviderplugin.h
+ providers/ghprovider/ghproviderwidget.cpp
+ providers/ghprovider/ghproviderwidget.h
+ providers/ghprovider/ghresource.cpp
+ providers/ghprovider/ghresource.h
 Copyright: 1999-2003 John Birch <jbb@kdevelop.org>
  2001 Bernd Gehrmann <bernd@kdevelop.org>
  2001 Matthias Hoelzer-Kluepfel <mhk@caldera.de>
@@ -287,7 +332,7 @@ Copyright: 1999-2003 John Birch <jbb@kdevelop.org>
  2005-2009 Vladimir Prus <ghost@cs.msu.su>
  2006, 2011 David Nolden <david.nolden.kdevelop@art-master.de>
  2006-2008 Matt Rogers <mattr@kde.org>
- 2006-2012 Aleix Pol Gonzalez <aleixpol@gmail.com>, <aleixpol@kde.org>
+ 2006-2013 Aleix Pol Gonzalez <aleixpol@gmail.com>, <aleixpol@kde.org>
  2006-2012 Andreas Pakulat <apaku@gmx.de>
  2007 Dukju Ahn <dukjuahn@gmail.com>
  2007-2008 Hamish Rodda <rodda@kde.org>
@@ -301,6 +346,9 @@ Copyright: 1999-2003 John Birch <jbb@kdevelop.org>
  2011 Shaun Reich <shaun.reich@kdemail.net>
  2012 Eike Hein <hein@kde.org>
  2012 Miha Čančula <miha@noughmad.eu>
+ 2013 Kevin Funk <kevin@kfunk.org>
+ 2013 Vlas Puhov <vlas.puhov@mail.ru>
+ 2012-2013 Miquel Sabaté <mikisabate@gmail.com>
 License: GPL-2+
 
 
@@ -382,8 +430,6 @@ Files: app/welcomepage/*
  languages/cpp/cppduchain/name_visitor.h
  languages/cpp/cppduchain/ptrtomembertype.cpp
  languages/cpp/cppduchain/ptrtomembertype.h
- languages/cpp/cppduchain/qpropertydeclaration.cpp
- languages/cpp/cppduchain/qpropertydeclaration.h
  languages/cpp/cppduchain/qtfunctiondeclaration.cpp
  languages/cpp/cppduchain/qtfunctiondeclaration.h
  languages/cpp/cppduchain/sourcemanipulation.cpp
@@ -455,7 +501,10 @@ Files: app/welcomepage/*
  languages/cpp/tests/cpptestfiles/alljsontests.cpp
  languages/cpp/tests/cpptestfiles/defaultparameters.cpp
  languages/cpp/tests/cpptestfiles/functiondefinitiondeclarations.cpp
+ languages/cpp/tests/cpptestfiles/initializer_uses.cpp
+ languages/cpp/tests/cpptestfiles/lambda.cpp
  languages/cpp/tests/cpptestfiles/returnconst.cpp
+ languages/cpp/tests/cpptestfiles/typedef_template_arg.cpp
  languages/cpp/tests/cpptestfiles/va_arg.cpp
  languages/cpp/tests/cpptestfiles/virtualspecifier.cpp
  languages/cpp/tests/test_cppassistants.cpp
@@ -466,6 +515,10 @@ Files: app/welcomepage/*
  languages/cpp/tests/test_cppcodegen.h
  languages/cpp/tests/test_cppfiles.cpp
  languages/cpp/tests/test_cppfiles.h
+ projectbuilders/ninjabuilder/kdevninjabuilderplugin.cpp
+ projectbuilders/ninjabuilder/kdevninjabuilderplugin.h
+ projectbuilders/ninjabuilder/ninjajob.cpp
+ projectbuilders/ninjabuilder/ninjajob.h
  projectmanagers/cmake/cmakeexport.h
  projectmanagers/cmake/parser/cmaketypes.h
 Copyright: 2002-2006 Roberto Raggi <roberto@kdevelop.org>
@@ -477,16 +530,20 @@ Copyright: 2002-2006 Roberto Raggi <roberto@kdevelop.org>
  2009 Bertjan Broeksema <b.broeksema@home.nl>
  2009 Ramon Zarazua <killerfox512+kde@gmail.com>
  2009 Ramón Zarazúa <killerfox512+kde@gmail.com>
- 2009-2011 Aleix Pol Gonzalez <aleixpol@kde.org>
+ 2009-2012 Aleix Pol Gonzalez <aleixpol@kde.org>
  2009-2012 Niko Sams <niko.sams@gmail.com>
  2010 Floris Ruijter <flo.ruijt@hotmail.com>
  2010 KDAB
  2010-2012 Olivier de Gaalon <olivier.jg@gmail.com>
  2010-2013 Milian Wolff <mail@milianw.de>
+ 2013 Vlas Puhov <vlas.puhov@mail.ru>
 License: LGPL-2
 
 
 Files: app/main.cpp
+ app/splash.cpp
+ app/splash.h
+ app/splash.qml
  app/plasma/runner/kdevelopsessions.cpp
  app/plasma/runner/kdevelopsessions.h
  debuggers/gdb/breakpointcontroller.cpp
@@ -608,6 +665,7 @@ Copyright: 2001-2002 Bernd Gehrmann <bernd@mail.berlios.de>
  2011 Martin Heide <martin.heide@gmx.net>
  2012 Ivan Shapovalov <intelfx100@gmail.com>
  2012 Miha Čančula <miha@noughmad.eu>
+ 2013 Sven Brauch <svenbrauch@gmail.com>
 License: LGPL-2+
 
 
@@ -758,11 +816,6 @@ License:
   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-Files: debuggers/gdb/printers/libstdcxx.py
-Copyright: 2008-2011 Free Software Foundation Inc
-License: GPL-3+
-
-
 Files: formatters/astyle/lib/*
 Copyright: 2006-2011 Jim Pattee <jimp03@email.com>
  1998-2002 Tal Davidson
@@ -776,7 +829,7 @@ License: GPL
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
- 
+ .
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
@@ -787,7 +840,7 @@ Files: projectmanagers/cmake/parser/cmListFileLexer.h
 Copyright: 2002 Kitware Inc. Insight Consortium.
 License: CMake-License
  Copyright 2002 Kitware, Inc., Insight Consortium.  All rights reserved.
-  
+ .
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
  * Redistributions of source code must retain the above copyright notice, this
@@ -798,7 +851,38 @@ License: CMake-License
  * Neither the names of Kitware, Inc., the Insight Software Consortium, nor the
    names of their contributors may be used to endorse or promote products
    derived from this software without specific prior written  permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+
+Files: languages/cpp/cppduchain/tests/data/*
+License: CC0 1.0 Universal
+
+
+Files: providers/ghprovider/cmake/FindQJson.cmake
+Copyright: 2010 Pino Toscano, <toscano.pino@tiscali.it>
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ * Neither the names of Kitware, Inc., the Insight Software Consortium, nor the
+   names of their contributors may be used to endorse or promote products
+   derived from this software without specific prior written  permission.
+ .
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
