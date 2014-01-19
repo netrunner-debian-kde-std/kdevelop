@@ -7,6 +7,7 @@ kdevelop (4:4.6.0-0r1) UNRELEASED; urgency=medium
   * Bump kdevplatform-dev build dependency to 1.6.0.
   * Add the pkg-config build dependency.
   * Update install files.
+  * Install kdevelop.xpm using .install file.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 19 Jan 2014 09:41:18 +0100
 
