@@ -1,9 +1,29 @@
 #!/usr/bin/make -f
 
-include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
+export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
 
-# Work around a conflict with kapptemplate
-binary-install/kdevelop-data::
-	find debian/$(cdbs_curpkg) -type f -name qmake_qt4guiapp.tar.bz2 | xargs rm -f
+%:
+	dh $@ --parallel --with kde
 
-DEB_DBG_PACKAGE_kdevelop := kdevelop-dbg
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf debian/man/out
+	-rmdir debian/man
+
+override_dh_auto_build:
+	dh_auto_build --parallel
+	if ! test -d debian/man/out; then mkdir -p debian/man/out; fi
+	for f in $$(find debian/man -name '*.man'); do \
+		soelim -I debian/man $$f \
+		> debian/man/out/`basename $$f .man`.`head -n1 $$f | awk '{print $$NF}'`; \
+	done
+
+override_dh_auto_install:
+	dh_auto_install
+	# Work around a conflict with kapptemplate
+	find debian/tmp -type f -name qmake_qt4guiapp.tar.bz2 | xargs rm -fv
+
+override_dh_strip:
+	dh_strip --dbg-package=kdevelop-dbg
+
+.PHONY: override_dh_auto_test
