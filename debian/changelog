@@ -8,6 +8,9 @@ kdevelop (4:4.6.0-0r1) UNRELEASED; urgency=medium
   * Add the pkg-config build dependency.
   * Update install files.
   * Install kdevelop.xpm using .install file.
+  * Bump the debhelper compatibility to 9:
+    - bump compat to 9
+    - bump the debhelper build dependency to 9
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 19 Jan 2014 09:41:18 +0100
 
