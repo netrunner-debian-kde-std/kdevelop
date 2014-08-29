@@ -2,9 +2,11 @@ kdevelop (4:4.7.0-0r1) UNRELEASED; urgency=medium
 
   * New upstream release.
 
+  [ Andreas Cord-Landwehr ]
+  * Bump kdevplatform-dev build dependency to 1.7.0.
+
   [ Pino Toscano ]
   * Update copyright.
-  * Bump kdevplatform-dev build dependency to 1.6.0.
   * Add the pkg-config build dependency.
   * Update install files.
   * Install kdevelop.xpm using .install file.
