@@ -8,7 +8,7 @@ Forwarded: no
 
 --- a/languages/cpp/CMakeLists.txt
 +++ b/languages/cpp/CMakeLists.txt
-@@ -11,7 +11,6 @@ add_definitions( -DKDE_DEFAULT_DEBUG_ARE
+@@ -11,7 +11,6 @@
  
  add_subdirectory(parser)
  add_subdirectory(cppduchain)
@@ -16,7 +16,7 @@ Forwarded: no
  ########### next target ###############
  
  set(kdevcpplanguagesupport_PART_SRCS
-@@ -90,6 +89,7 @@ target_link_libraries(kdevcpplanguagesup
+@@ -81,6 +80,7 @@
  
  install(TARGETS kdevcpplanguagesupport DESTINATION ${PLUGIN_INSTALL_DIR})
  
@@ -26,7 +26,7 @@ Forwarded: no
  
 --- a/languages/cpp/tests/CMakeLists.txt
 +++ b/languages/cpp/tests/CMakeLists.txt
-@@ -83,6 +83,7 @@ target_link_libraries(cppspecialcompleti
+@@ -87,6 +87,7 @@
      ${KDEVPLATFORM_PROJECT_LIBRARIES}
      ${KDEVPLATFORM_TESTS_LIBRARIES}
  )
@@ -34,15 +34,7 @@ Forwarded: no
  
  ########### next target ###############
  
-@@ -103,7 +104,6 @@ target_link_libraries(cppassistantstest
-     kdev4cppduchain
-     kdev4cpprpp
-     kdev4cppparser
--    kdevcpplanguagesupport
-     ${KDEVPLATFORM_INTERFACES_LIBRARIES}
-     ${KDEVPLATFORM_PROJECT_LIBRARIES}
-     ${KDE4_THREADWEAVER_LIBRARIES}
-@@ -112,6 +112,7 @@ target_link_libraries(cppassistantstest
+@@ -111,6 +112,7 @@
      ${KDE4_KDECORE_LIBS}
      ${KDE4_KTEXTEDITOR_LIBS}
  )
@@ -50,7 +42,7 @@ Forwarded: no
  
  add_definitions(-DTEST_COMPLETION)
  
-@@ -143,6 +144,7 @@ target_link_libraries(cppcodecompletiont
+@@ -147,6 +149,7 @@
      ${KDE4_KDECORE_LIBS}
      ${KDE4_KTEXTEDITOR_LIBS}
  )
@@ -58,7 +50,7 @@ Forwarded: no
  
  kde4_add_unit_test(cppcodegentest ${cppcodegentest_SRCS})
  target_link_libraries(cppcodegentest
-@@ -155,6 +157,7 @@ target_link_libraries(cppcodegentest
+@@ -159,6 +162,7 @@
      ${KDEVPLATFORM_PROJECT_LIBRARIES}
      ${KDEVPLATFORM_TESTS_LIBRARIES}
  )

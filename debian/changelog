@@ -4,6 +4,7 @@ kdevelop (4:4.7.0-0r1) UNRELEASED; urgency=medium
 
   [ Andreas Cord-Landwehr ]
   * Bump kdevplatform-dev build dependency to 1.7.0.
+  * Refresh patches.
 
   [ Pino Toscano ]
   * Update copyright.
