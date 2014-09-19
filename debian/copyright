@@ -54,10 +54,8 @@ Files: debuggers/gdb/stringhelpers.cpp
  languages/cpp/codecompletion/missingincludeitem.h
  languages/cpp/codegen/adaptsignatureaction.cpp
  languages/cpp/codegen/adaptsignatureaction.h
- languages/cpp/codegen/codeassistant.cpp
- languages/cpp/codegen/codeassistant.h
- languages/cpp/codegen/signatureassistant.cpp
- languages/cpp/codegen/signatureassistant.h
+ languages/cpp/codegen/adaptsignatureassistant.cpp
+ languages/cpp/codegen/adaptsignatureassistant.h
  languages/cpp/codegen/unresolvedincludeassistant.cpp
  languages/cpp/codegen/unresolvedincludeassistant.h
  languages/cpp/cppduchain/builtinoperators.cpp
@@ -184,6 +182,24 @@ Files: app/kdevideextension.cpp
  languages/cpp/cppduchain/macroset.cpp
  languages/cpp/cppduchain/macroset.h
  languages/cpp/includepathresolver.h
+ languages/plugins/custom-definesandincludes/kcm_widget/definesmodel.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/definesmodel.h
+ languages/plugins/custom-definesandincludes/kcm_widget/defineswidget.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/defineswidget.h
+ languages/plugins/custom-definesandincludes/kcm_widget/includesmodel.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/includesmodel.h
+ languages/plugins/custom-definesandincludes/kcm_widget/includeswidget.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/includeswidget.h
+ languages/plugins/custom-definesandincludes/kcm_widget/kcm_customdefinesandincludes.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/kcm_customdefinesandincludes.h
+ languages/plugins/custom-definesandincludes/kcm_widget/projectpathsmodel.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/projectpathsmodel.h
+ languages/plugins/custom-definesandincludes/kcm_widget/projectpathswidget.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/projectpathswidget.h
+ languages/plugins/custom-definesandincludes/settingsmanager.cpp
+ languages/plugins/custom-definesandincludes/settingsmanager.h
+ languages/plugins/custom-definesandincludes/tests/definesandincludestest.cpp
+ languages/plugins/custom-definesandincludes/tests/definesandincludestest.h
  projectbuilders/cmakebuilder/cmakebuilder.cpp
  projectbuilders/cmakebuilder/cmakebuilder.h
  projectbuilders/cmakebuilder/cmakebuilderpreferences.cpp
@@ -291,20 +307,8 @@ Files: app/kdevideextension.cpp
  projectmanagers/custom-buildsystem/custombuildsystemplugin.cpp
  projectmanagers/custom-buildsystem/custombuildsystemplugin.h
  projectmanagers/custom-buildsystem/debugarea.cpp
- projectmanagers/custom-buildsystem/definesmodel.cpp
- projectmanagers/custom-buildsystem/definesmodel.h
- projectmanagers/custom-buildsystem/defineswidget.cpp
- projectmanagers/custom-buildsystem/defineswidget.h
- projectmanagers/custom-buildsystem/includesmodel.cpp
- projectmanagers/custom-buildsystem/includesmodel.h
- projectmanagers/custom-buildsystem/includeswidget.cpp
- projectmanagers/custom-buildsystem/includeswidget.h
  projectmanagers/custom-buildsystem/kcm_custombuildsystem.cpp
  projectmanagers/custom-buildsystem/kcm_custombuildsystem.h
- projectmanagers/custom-buildsystem/projectpathsmodel.cpp
- projectmanagers/custom-buildsystem/projectpathsmodel.h
- projectmanagers/custom-buildsystem/projectpathswidget.cpp
- projectmanagers/custom-buildsystem/projectpathswidget.h
  projectmanagers/custom-buildsystem/tests/*
  projectmanagers/custommake/custommakemanager.cpp
  projectmanagers/custommake/custommakemanager.h
@@ -324,6 +328,18 @@ Files: app/kdevideextension.cpp
  providers/ghprovider/ghproviderwidget.h
  providers/ghprovider/ghresource.cpp
  providers/ghprovider/ghresource.h
+ projectbuilders/cmakebuilder/prunejob.cpp
+ projectbuilders/cmakebuilder/prunejob.h
+ projectbuilders/ninjabuilder/ninjabuilderpreferences.cpp
+ projectbuilders/ninjabuilder/ninjabuilderpreferences.h
+ projectmanagers/cmake/cmakecommitchangesjob.cpp
+ projectmanagers/cmake/cmakecommitchangesjob.h
+ projectmanagers/cmake/cmakeedit.cpp
+ projectmanagers/cmake/cmakeedit.h
+ projectmanagers/cmake/cmakeimportjob.cpp
+ projectmanagers/cmake/cmakeimportjob.h
+ projectmanagers/cmake/parser/generationexpressionsolver.cpp
+ projectmanagers/cmake/parser/generationexpressionsolver.h
 Copyright: 1999-2003 John Birch <jbb@kdevelop.org>
  2001 Bernd Gehrmann <bernd@kdevelop.org>
  2001 Matthias Hoelzer-Kluepfel <mhk@caldera.de>
@@ -346,9 +362,10 @@ Copyright: 1999-2003 John Birch <jbb@kdevelop.org>
  2011 Shaun Reich <shaun.reich@kdemail.net>
  2012 Eike Hein <hein@kde.org>
  2012 Miha Čančula <miha@noughmad.eu>
- 2013 Kevin Funk <kevin@kfunk.org>
+ 2013-2014 Kevin Funk <kevin@kfunk.org>
  2013 Vlas Puhov <vlas.puhov@mail.ru>
  2012-2013 Miquel Sabaté <mikisabate@gmail.com>
+ 2014 Sergey Kalinichev <kalinichev.so.0@gmail.com>
 License: GPL-2+
 
 
@@ -386,7 +403,12 @@ License: LGPL-2.1+ or any later version approved by KDE e.V.
  License along with this library. If not, see <http://www.gnu.org/licenses/>.
 
 
-Files: app/welcomepage/*
+Files: app/welcomepage/sessionsmodel.cpp
+ app/welcomepage/sessionsmodel.h
+ app/welcomepage/uihelper.cpp
+ app/welcomepage/uihelper.h
+ app/welcomepage/welcomepageview.cpp
+ app/welcomepage/welcomepageview.h
  debuggers/gdb/printers/tests/qtprinters.cpp
  debuggers/gdb/printers/tests/qtprinters.h
  debuggers/gdb/unittests/*
@@ -405,12 +427,6 @@ Files: app/welcomepage/*
  languages/cpp/codegen/cppduchainchangeset.h
  languages/cpp/codegen/makeimplementationprivate.cpp
  languages/cpp/codegen/makeimplementationprivate.h
- languages/cpp/codegen/renameaction.cpp
- languages/cpp/codegen/renameaction.h
- languages/cpp/codegen/renameassistant.cpp
- languages/cpp/codegen/renameassistant.h
- languages/cpp/codegen/renamefileaction.cpp
- languages/cpp/codegen/renamefileaction.h
  languages/cpp/cppduchain/contextbuilder.cpp
  languages/cpp/cppduchain/contextbuilder.h
  languages/cpp/cppduchain/controlflowgraphbuilder.cpp
@@ -546,6 +562,7 @@ Files: app/main.cpp
  app/splash.qml
  app/plasma/runner/kdevelopsessions.cpp
  app/plasma/runner/kdevelopsessions.h
+ app/welcomepage/qml/*
  debuggers/gdb/breakpointcontroller.cpp
  debuggers/gdb/breakpointcontroller.h
  debuggers/gdb/mi/gdbmi.cpp
@@ -597,16 +614,10 @@ Files: app/main.cpp
  languages/cpp/codecompletion/model.h
  languages/cpp/codecompletion/worker.cpp
  languages/cpp/codecompletion/worker.h
- languages/cpp/codedelegate.cpp
- languages/cpp/codedelegate.h
  languages/cpp/codegen/cppclasshelper.cpp
  languages/cpp/codegen/cppclasshelper.h
- languages/cpp/codegen/progressdialogs.cpp
- languages/cpp/codegen/progressdialogs.h
  languages/cpp/codegen/simplerefactoring.cpp
  languages/cpp/codegen/simplerefactoring.h
- languages/cpp/codeproxy.cpp
- languages/cpp/codeproxy.h
  languages/cpp/cpphighlighting.cpp
  languages/cpp/cpphighlighting.h
  languages/cpp/cpplanguagesupport.cpp
@@ -614,20 +625,23 @@ Files: app/main.cpp
  languages/cpp/cppparsejob.cpp
  languages/cpp/cppparsejob.h
  languages/cpp/includepathresolver.cpp
- languages/cpp/msvcdefinehelper.cpp
  languages/cpp/preprocessjob.cpp
  languages/cpp/preprocessjob.h
  languages/cpp/quickopen.cpp
  languages/cpp/quickopen.h
  languages/cpp/setuphelpers.cpp
  languages/cpp/setuphelpers.h
- languages/cpp/setuphelpers_gcc.cpp
- languages/cpp/setuphelpers_msvc.cpp
  languages/cpp/tests/cpp-parser.cpp
  languages/cpp/tests/test_buddies.cpp
  languages/cpp/tests/test_buddies.h
  languages/cpp/tests/test_specialcompletion.cpp
  languages/cpp/tests/test_specialcompletion.h
+ languages/plugins/custom-definesandincludes/compilerprovider/msvcdefinehelper.cpp
+ languages/plugins/custom-definesandincludes/debugarea.cpp
+ languages/plugins/custom-definesandincludes/debugarea.h
+ languages/plugins/custom-definesandincludes/definesandincludesexport.h
+ languages/plugins/custom-definesandincludes/definesandincludesmanager.cpp
+ languages/plugins/custom-definesandincludes/definesandincludesmanager.h
  projectbuilders/makebuilder/makebuilder.cpp
  projectbuilders/makebuilder/makebuilder.h
  projectbuilders/makebuilder/makejob.cpp
@@ -657,7 +671,7 @@ Copyright: 2001-2002 Bernd Gehrmann <bernd@mail.berlios.de>
  2008-2011 Sebastian Kügler <sebas@kde.org>
  2009-2010 Niko Sams <niko.sams@gmail.com>
  2009-2012 Aleix Pol Gonzalez <aleixpol@kde.org>
- 2009-2012 Milian Wolff <mail@milianw.de>
+ 2009-2014 Milian Wolff <mail@milianw.de>
  2010 Benjamin Port <port.benjamin@gmail.com>
  2010 Esben Mose Hansen <kde@mosehansen.dk>
  2010 Patrick Spendrin <ps_ml@gmx.de>
@@ -666,6 +680,8 @@ Copyright: 2001-2002 Bernd Gehrmann <bernd@mail.berlios.de>
  2012 Ivan Shapovalov <intelfx100@gmail.com>
  2012 Miha Čančula <miha@noughmad.eu>
  2013 Sven Brauch <svenbrauch@gmail.com>
+ 2014 Kevin Funk <kfunk@kde.org>
+ 2014 Sergey Kalinichev <kalinichev.so.0@gmail.com>
 License: LGPL-2+
 
 
@@ -748,10 +764,41 @@ Copyright: No copyright holders stated
 Comment: No license stated, hence the default license in COPYING applies
 License: GPL-2
 
+Files: projectbuilders/ninjabuilder/kdevninjabuilderplugin.cpp
+ projectbuilders/ninjabuilder/kdevninjabuilderplugin.h
+ projectbuilders/ninjabuilder/ninjajob.cpp
+ projectbuilders/ninjabuilder/ninjajob.h
+Copyright: 2012 Aleix Pol Gonzalez <aleixpol@kde.org>
+License: GPL-2
 
 Files: languages/cpp/cppduchain/tests/testenvironment.cpp
  languages/cpp/cppduchain/tests/testenvironment.h
-Copyright: 2013 Milian Wolff <mail@milianw.de>
+ languages/cpp/codegen/customincludepaths.cpp
+ languages/cpp/codegen/customincludepaths.h
+ languages/plugins/custom-definesandincludes/compilerprovider/compilerfactories.cpp
+ languages/plugins/custom-definesandincludes/compilerprovider/compilerfactories.h
+ languages/plugins/custom-definesandincludes/compilerprovider/compilerprovider.cpp
+ languages/plugins/custom-definesandincludes/compilerprovider/compilerprovider.h
+ languages/plugins/custom-definesandincludes/compilerprovider/gcclikecompiler.cpp
+ languages/plugins/custom-definesandincludes/compilerprovider/gcclikecompiler.h
+ languages/plugins/custom-definesandincludes/compilerprovider/icompiler.cpp
+ languages/plugins/custom-definesandincludes/compilerprovider/icompiler.h
+ languages/plugins/custom-definesandincludes/compilerprovider/icompilerfactory.h
+ languages/plugins/custom-definesandincludes/compilerprovider/icompilerprovider.h
+ languages/plugins/custom-definesandincludes/compilerprovider/msvccompiler.cpp
+ languages/plugins/custom-definesandincludes/compilerprovider/msvccompiler.h
+ languages/plugins/custom-definesandincludes/compilerprovider/tests/test_compilerprovider.cpp
+ languages/plugins/custom-definesandincludes/compilerprovider/tests/test_compilerprovider.h
+ languages/plugins/custom-definesandincludes/kcm_widget/compilersmodel.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/compilersmodel.h
+ languages/plugins/custom-definesandincludes/kcm_widget/compilerswidget.cpp
+ languages/plugins/custom-definesandincludes/kcm_widget/compilerswidget.h
+ languages/plugins/custom-definesandincludes/tests/projectsgenerator.cpp
+ languages/plugins/custom-definesandincludes/tests/projectsgenerator.h
+Copyright: 2010 Patrick Spendrin <ps_ml@gmx.de>
+ 2013 Milian Wolff <mail@milianw.de>
+ 2013-2014 Kevin Funk <kfunk@kde.org>
+ 2014 Sergey Kalinichev <kalinichev.so.0@gmail.com>
 License: GPL-2+ or any later version approved by KDE e.V.
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License as
@@ -765,7 +812,7 @@ License: GPL-2+ or any later version approved by KDE e.V.
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
- 
+
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
