@@ -72,7 +72,7 @@ Package: kdevelop-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: kdelibs5-dbg, kdevelop (= ${binary:Version})
+Depends: ${misc:Depends}, kdelibs5-dbg, kdevelop (= ${binary:Version})
 Description: debugging symbols for KDevelop
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
@@ -86,6 +86,7 @@ Description: debugging symbols for KDevelop
 Package: kdevelop-l10n
 Section: localization
 Architecture: all
+Depends: ${misc:Depends}
 Replaces: kdevelop-l10n-ca,
           kdevelop-l10n-cavalencia,
           kdevelop-l10n-da,
