@@ -4,6 +4,10 @@ kdevelop (4:4.7.0-2) UNRELEASED; urgency=medium
   * Change section of kdevelop-dev to libdevel.
   * Add ${misc:Depends} in kdevelop-dbg and kdevelop-l10n.
 
+  [ Sune Vuorela ]
+  * Make KDevelop recommend kapptemplate to have more meaningful project
+    templates available.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Sep 2014 07:23:44 +0200
 
 kdevelop (4:4.7.0-1) unstable; urgency=medium
