@@ -25,7 +25,7 @@ Architecture: any
 Depends: kdevelop-data (>= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: g++, gcc, gdb (>= 7.0), make, kapptemplate
+Recommends: g++, gcc, gdb (>= 7.0), kapptemplate, make
 Suggests: cmake, kdevelop-l10n, ninja-build
 Description: integrated development environment for KDE
  KDevelop is an easy to use integrated development environment for KDE.
@@ -71,7 +71,7 @@ Package: kdevelop-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdelibs5-dbg, kdevelop (= ${binary:Version})
+Depends: kdelibs5-dbg, kdevelop (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for KDevelop
  KDevelop is an easy to use integrated development environment for KDE.
  It supports a wide range of programming languages and features project
