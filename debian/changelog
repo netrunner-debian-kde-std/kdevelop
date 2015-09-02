@@ -13,6 +13,8 @@ kdevelop (4:4.7.1-1) UNRELEASED; urgency=medium
     - Bump kdevplatform-dev build dependency to 1.7.1.
   * Remove kde-workspace from build dependencies. We no longer provide
     a KDE 4 based workspace.
+    - Add libsoprano-dev as a build dependency, it was probably previously
+      pulled in by kde-workspace.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Sep 2014 07:23:44 +0200
 
