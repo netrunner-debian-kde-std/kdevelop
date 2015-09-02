@@ -8,6 +8,10 @@ kdevelop (4:4.7.0-2) UNRELEASED; urgency=medium
   * Make KDevelop recommend kapptemplate to have more meaningful project
     templates available.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Remove kde-workspace from build dependencies. We no longer provide
+    a KDE 4 based workspace.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Sep 2014 07:23:44 +0200
 
 kdevelop (4:4.7.0-1) unstable; urgency=medium

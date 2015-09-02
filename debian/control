@@ -8,7 +8,6 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Andreas Cord-Landwehr <cola@uni-paderborn.de>
 Build-Depends: cmake,
                debhelper (>= 9),
-               kde-workspace-dev (>= 4:4.5.2),
                kdevplatform-dev (>= 1.7.0),
                libqjson-dev,
                libqtwebkit-dev,
