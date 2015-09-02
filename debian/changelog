@@ -10,6 +10,7 @@ kdevelop (4:4.7.1-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
+    - Bump kdevplatform-dev build dependency to 1.7.1.
   * Remove kde-workspace from build dependencies. We no longer provide
     a KDE 4 based workspace.
 
