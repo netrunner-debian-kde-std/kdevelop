@@ -1,4 +1,6 @@
-kdevelop (4:4.7.1-1) UNRELEASED; urgency=medium
+kdevelop (4:4.7.1-1) unstable; urgency=medium
+
+  * Team upload.
 
   [ Pino Toscano ]
   * Change section of kdevelop-dev to libdevel.
@@ -16,7 +18,7 @@ kdevelop (4:4.7.1-1) UNRELEASED; urgency=medium
     - Add libsoprano-dev as a build dependency, it was probably previously
       pulled in by kde-workspace.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Sep 2014 07:23:44 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 02 Sep 2015 21:10:24 -0300
 
 kdevelop (4:4.7.0-1) unstable; urgency=medium
 
