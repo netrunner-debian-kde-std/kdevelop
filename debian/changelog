@@ -1,6 +1,7 @@
 kdevelop (4:4.7.1-2) unstable; urgency=medium
 
   * Add libkdevcompilerprovider to ensure that code navigation works.
+  * Backport patch from upstream to fix a crash when parsing bits/c++config.h.
 
  -- Sune Vuorela <sune@debian.org>  Sat, 26 Sep 2015 08:41:23 +0200
 
