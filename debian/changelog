@@ -6,6 +6,8 @@ kdevelop (4:4.7.2-0r1) UNRELEASED; urgency=medium
     - dont-use-removed-temporaries.diff: drop, backported from upstream
   * Drop menu file and its pixmap, since kdevelop already provides a .desktop
     file.
+  * Remove extra libsoprano-dev build dependency, which was added as workaround
+    for a bug in kdelibs5-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 Jan 2016 21:36:40 +0100
 
