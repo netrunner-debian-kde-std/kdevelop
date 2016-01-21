@@ -1,3 +1,10 @@
+kdevelop (4:4.7.2-0r1) UNRELEASED; urgency=medium
+
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 Jan 2016 21:36:40 +0100
+
 kdevelop (4:4.7.1-2) unstable; urgency=medium
 
   * Add libkdevcompilerprovider to ensure that code navigation works.
