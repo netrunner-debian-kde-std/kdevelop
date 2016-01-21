@@ -4,6 +4,8 @@ kdevelop (4:4.7.2-0r1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update the patches:
     - dont-use-removed-temporaries.diff: drop, backported from upstream
+  * Drop menu file and its pixmap, since kdevelop already provides a .desktop
+    file.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 21 Jan 2016 21:36:40 +0100
 
